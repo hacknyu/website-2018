@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
-$body-font: "Helvetica Neue", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $navbar-item-padding: 1.5em;
+
+$large: 800px;
 
 @mixin clearfix() {
   &::after {
@@ -14,7 +16,7 @@ $navbar-item-padding: 1.5em;
 
 body {
   font-family: $body-font;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   // background-color: #222222;
 }
@@ -57,7 +59,7 @@ body {
 
 #cover {
   margin-top: 58px;
-  padding-top: 80px;
+  padding-top: 3em;
   height: 80vh;
   overflow: auto; // prevent margin collapse
   min-height: 300px;
@@ -80,6 +82,10 @@ body {
   font-size: 24px;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 .info-line {
   margin: 0;
 }
@@ -87,4 +93,44 @@ body {
 .container {
   width: 42em;
   margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25em;
+  border: 2px white solid;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  background-color: #222222;
+
+  &:hover {
+    transition-duration: 250ms;
+    background-color: rgb(78, 78, 78);
+  }
+
+  &:visited, &:active {
+    color: white;
+  }
+}
+
+#registration-button {
+  background-color: #C31AFF;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-right: 6em;
+
+  &:hover {
+    background-color: #D55EFF;
+  }
+}
+
+p {
+  line-height: 1.45;
+}
+
+.page-section {
+  padding-top: 2em;
 }

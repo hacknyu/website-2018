@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 body {
-  font-family: "Helvetica Neue", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
   margin: 0; }
 
 #navbar {
@@ -36,7 +36,7 @@ body {
 
 #cover {
   margin-top: 58px;
-  padding-top: 80px;
+  padding-top: 3em;
   height: 80vh;
   overflow: auto;
   min-height: 300px;
@@ -55,9 +55,42 @@ body {
   float: left;
   font-size: 24px; }
 
+h1 {
+  font-size: 36px; }
+
 .info-line {
   margin: 0; }
 
 .container {
   width: 42em;
   margin: 0 auto; }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25em;
+  border: 2px white solid;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  background-color: #222222; }
+  .button:hover {
+    transition-duration: 250ms;
+    background-color: #4e4e4e; }
+  .button:visited, .button:active {
+    color: white; }
+
+#registration-button {
+  background-color: #C31AFF;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-right: 6em; }
+  #registration-button:hover {
+    background-color: #D55EFF; }
+
+p {
+  line-height: 1.45; }
+
+.page-section {
+  padding-top: 2em; }
