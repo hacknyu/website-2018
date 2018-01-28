@@ -1,0 +1,143 @@
+<!-- version-1.0 Vikram Sunil Bajaj -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HackNYU 2018</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- animation stylesheet -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/a660f91ac9.js"></script>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+    </style>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;" bgcolor=#242424>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <nav>
+        <!--<div class="navbar-fixed">-->
+        <div class="nav-wrapper" style="background-color: #FFFFFF">
+            <a href="# " data-activates="mobile-demo " class="button-collapse left "><i class="material-icons " style="color: #242424">menu</i></a>
+            <!-- dropdowns -->
+            <ul id="tracks" class="dropdown-content">
+                <li><a href="#!" style="color: #242424">Accessibility & Assistive Technology</a></li>
+                <li><a href="#!" style="color: #242424">Education Technology</a></li>
+                <li><a href="#!" style="color: #242424">Healthcare</a></li>
+                <li><a href="#!" style="color: #242424">Sustainability & Social Impact</a></li>
+            </ul>
+
+            <ul id="resources" class="dropdown-content">
+                <li><a href="#!" style="color: #242424">FAQs</a></li>
+                <li><a href="#!" style="color: #242424">APIs</a></li>
+            </ul>
+
+            <ul id="nav-mobile " class="left hide-on-med-and-down ">
+                <li><a href="index.html" style="color: #242424">Home</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="tracks" style="color: #242424">Tracks<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="resources" style="color: #242424">Resources<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="past_sponsors.html " style="color: #242424">Past Sponsors</a></li>
+                <li><a href="contact.php " style="color: #242424">Contact</a></li>
+                <li><a href="HackNYU2018_Deck.pdf" target="_blank" style="color: #242424">Sponsorship Deck</a></li>
+            </ul>
+
+            <ul class="side-nav collapsible" id="mobile-demo" data-collapsible="accordion">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="collapsible-header" style="color: #212121; margin-left: 15px; font-weight: 500">Tracks<i class="material-icons right">arrow_drop_down</i></div>
+                    <div class="collapsible-body" style="color: #212121">
+                        <ul>
+                            <li style="margin-left: 30px; font-size: 12px">Accessibility & Assistive Technology</li>
+                            <li style="margin-left: 30px; font-size: 12px">Education Technology</li>
+                            <li style="margin-left: 30px; font-size: 12px">Healthcare</li>
+                            <li style="margin-left: 30px; font-size: 12px">Sustainability & Social Impact</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" style="color: #212121; margin-left: 15px; font-weight: 500">Resources<i class="material-icons right">arrow_drop_down</i></div>
+                    <div class="collapsible-body" style="color: #212121">
+                        <ul>
+                            <li style="margin-left: 30px; font-size: 12px">FAQs</li>
+                            <li style="margin-left: 30px; font-size: 12px">APIs</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="past_sponsors.html ">Past Sponsors</a></li>
+                <li><a href="contact.php ">Contact</a></li>
+                <li><a href="HackNYU2018_Deck.pdf" target="_blank">Sponsorship Deck</a></li>
+            </ul>
+        </div>
+        <!--</div>-->
+    </nav>
+
+    <a id="mlh-trust-badge " style="display:block; max-width:100px; min-width:60px; position:fixed; right:50px; top:0; width:10%; z-index:10000 " href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2018&amp;utm_content=white " target="_blank" class="hide-on-med-and-down"><img src="images/mlh.svg " alt="Major League Hacking 2018 Hackathon Season " style="width:100% "></a>
+
+    <a id="mlh-trust-badge " style="display:block; max-width:100px; min-width:60px; position:fixed; right:25px; top:0; width:10%; z-index:10000 " href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2018&amp;utm_content=white " target="_blank" class="hide-on-large-only"><img src="images/mlh.svg " alt="Major League Hacking 2018 Hackathon Season " style="width:100% "></a>
+    <main>
+        <div class="row" style="padding-top: 10px; padding-bottom: 40px; background-color: #242424">
+            <div class="col s12 m3 l3 push-m3 push-l3"><img class="animated fadeInLeft" id="logo" src="images/Logo-Square-Clear-Black.png" style="display:block; margin:auto; padding-top: 45px"></div>
+            <div class="col s12 m2 l2 push-m3 push-l3">
+                <ul id="details" style="padding-left: 15px; padding-top: 5px">
+                    <li class="animated fadeIn" style="color: white;">
+                        <h3 style="font-family: 'Roboto', sans-serif;">HackNYU</h3>
+                    </li>
+                    <li class="animated fadeIn" style="color: white;">Brooklyn · Shanghai · Abu Dhabi</li>
+                    <li class="animated fadeIn" style="color: white;">March 23 — 25, 2018</li><br>
+                    <li><a class="waves-effect waves-light btn" style="background-color: purple; color: white;">REGISTER</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer" style="background-color: white">
+        <div class="container">
+            <ul style="list-style: none;" class="center">
+                <li style="display: inline;"><a href="" target="_blank"><i class="indigo-text fa fa-facebook-square fa-3x"></i></a></li>
+                <li style="display: inline;"><a href="" target="_blank"><i class="blue-text fa fa-twitter-square fa-3x"></i></a></li>
+                <li style="display: inline;"><a href="" target="_blank"><i class="purple-text fa fa-instagram fa-3x"></i></a></li>
+                <li style="display: inline;"><a href="" target="_blank"><i class="yellow-text fa fa-snapchat fa-3x"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright" style="color: #242424">
+            <div class="container center">
+                © HackNYU 2018
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse ").sideNav({
+                menuWidth: 240,
+                edge: 'left',
+                closeOnClick: true
+            });
+            $('.dropdown-button').dropdown({
+                belowOrigin: true // Displays dropdown below the button
+            });
+            /*Materialize.fadeInImage('#logo') */
+            Materialize.showStaggeredList('#details')
+        });
+
+    </script>
+</body>
+
+</html>
