@@ -31,6 +31,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.03em;
+  z-index: 999;
 
   ul {
     margin: 0;
@@ -59,7 +60,7 @@ body {
 
 #cover {
   margin-top: 58px;
-  padding-top: 3em;
+  padding-top: 2em;
   height: 80vh;
   overflow: auto; // prevent margin collapse
   min-height: 300px;
@@ -80,7 +81,7 @@ body {
   // padding-left: 10%;
   float: left;
   font-size: 24px;
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 h1 {
@@ -97,7 +98,7 @@ h1 {
   stroke-dasharray: 1000;
   stroke: rgba(255, 255, 255, 0.5);
   stroke-width: 12;
-  animation: dash 3s normal forwards linear;
+  animation: dash 4s normal forwards linear;
   stroke-dashoffset: 1000;
 }
 
@@ -154,11 +155,32 @@ p {
 }
 
 .page-section {
-  padding-top: 2em;
+  padding-top: 1.6em;
 }
 
 #copyright-footer {
   background-color:  rgb(230, 230, 230);
   text-align: center;
   padding: 2em;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
