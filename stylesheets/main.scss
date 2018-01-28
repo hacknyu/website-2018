@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 $body-font: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $navbar-item-padding: 1.5em;
 
 $large: 800px;
+
+$accent-color: #C31AFF;
 
 @mixin clearfix() {
   &::after {
@@ -136,7 +139,7 @@ h1 {
 }
 
 #registration-button {
-  background-color: #C31AFF;
+  background-color: $accent-color;
   font-weight: bold;
   margin-top: 2em;
   margin-right: 6em;
@@ -159,7 +162,8 @@ p {
 }
 
 #copyright-footer {
-  background-color:  rgb(230, 230, 230);
+  margin-top: 3em;
+  background-color: rgb(230, 230, 230);
   text-align: center;
   padding: 2em;
 }
@@ -183,4 +187,41 @@ p {
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+.social-media-icon {
+  float: left;
+  display: block;
+}
+
+#social-media {
+  @include clearfix();
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    float: left;
+  }
+}
+
+.fa-facebook-square {
+  color: #3f51b5;
+}
+
+.fa-twitter-square {
+  color: #2196F3;
+}
+
+.fa-instagram {
+  color: $accent-color;
+}
+
+.fa-snapchat {
+  color: #FFFC00;
 }

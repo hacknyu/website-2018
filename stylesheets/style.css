@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -113,6 +114,7 @@ p {
   padding-top: 1.6em; }
 
 #copyright-footer {
+  margin-top: 3em;
   background-color: #e6e6e6;
   text-align: center;
   padding: 2em; }
@@ -131,3 +133,33 @@ p {
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both; }
+
+.social-media-icon {
+  float: left;
+  display: block; }
+
+#social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em; }
+  #social-media::after {
+    display: block;
+    content: "";
+    clear: both; }
+  #social-media li {
+    display: inline-block; }
+  #social-media a {
+    float: left; }
+
+.fa-facebook-square {
+  color: #3f51b5; }
+
+.fa-twitter-square {
+  color: #2196F3; }
+
+.fa-instagram {
+  color: #C31AFF; }
+
+.fa-snapchat {
+  color: #FFFC00; }
