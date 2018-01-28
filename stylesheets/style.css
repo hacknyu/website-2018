@@ -110,3 +110,8 @@ p {
 
 .page-section {
   padding-top: 2em; }
+
+#copyright-footer {
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 2em; }
