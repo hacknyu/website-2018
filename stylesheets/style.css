@@ -53,13 +53,26 @@ body {
 #cover-info {
   width: 50%;
   float: left;
-  font-size: 24px; }
+  font-size: 24px;
+  padding-top: 2em; }
 
 h1 {
   font-size: 36px; }
 
 .info-line {
   margin: 0; }
+
+#curves {
+  fill: #222;
+  stroke-dasharray: 1000;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 12;
+  animation: dash 3s normal forwards linear;
+  stroke-dashoffset: 1000; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
 
 .container {
   width: 42em;
@@ -88,6 +101,9 @@ h1 {
   margin-right: 6em; }
   #registration-button:hover {
     background-color: #D55EFF; }
+
+h1 {
+  margin-top: 0; }
 
 p {
   line-height: 1.45; }

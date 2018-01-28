@@ -80,6 +80,7 @@ body {
   // padding-left: 10%;
   float: left;
   font-size: 24px;
+  padding-top: 2em;
 }
 
 h1 {
@@ -88,6 +89,23 @@ h1 {
 
 .info-line {
   margin: 0;
+}
+
+#curves {
+  fill: #222;
+  // fill-opacity: 1;
+  stroke-dasharray: 1000;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 12;
+  animation: dash 3s normal forwards linear;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+    // stroke-dasharray: 1000;
+  }
 }
 
 .container {
@@ -125,6 +143,10 @@ h1 {
   &:hover {
     background-color: #D55EFF;
   }
+}
+
+h1 {
+  margin-top: 0;
 }
 
 p {
