@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+$body-font: "Helvetica Neue", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$navbar-item-padding: 1.5em;
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+body {
+  font-family: $body-font;
+  font-size: 18px;
+  margin: 0;
+  // background-color: #222222;
+}
+
+#navbar {
+  @include clearfix();
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0 $navbar-item-padding;
+  }
+
+  a {
+    float: left;
+    display: block;
+    padding: $navbar-item-padding;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: rgb(230, 230, 230);
+    }
+
+    &:visited, &:active {
+      color: black;
+    }
+  }
+}
+
+#cover {
+  margin-top: 58px;
+  padding-top: 80px;
+  height: 80vh;
+  overflow: auto; // prevent margin collapse
+  min-height: 300px;
+  background-color: #222222;
+  color: white;
+}
+
+#cover-logo {
+  display: block;
+  width: 40%;
+  min-height: 200px;
+  float: left;
+  padding-right: 10%;
+}
+
+#cover-info {
+  width: 50%;
+  // padding-left: 10%;
+  float: left;
+  font-size: 24px;
+}
+
+.info-line {
+  margin: 0;
+}
+
+.container {
+  width: 42em;
+  margin: 0 auto;
+}

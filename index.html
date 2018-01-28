@@ -1,112 +1,33 @@
-<!-- version-1.0 Vikram Sunil Bajaj -->
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>HackNYU 2018</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <!-- animation stylesheet -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HackNYU</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
-
 <body>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <nav>
-        <!--<div class="navbar-fixed">-->
-        <div class="nav-wrapper" style="background-color: #000000">
-            <a href="# " data-activates="mobile-demo " class="button-collapse right "><i class="material-icons ">menu</i></a>
-            <!-- dropdowns -->
-            <ul id="tracks" class="dropdown-content">
-                <li><a href="#!" style="color: #57068C">Accessibility & Assistive Technology</a></li>
-                <li><a href="#!" style="color: #57068C">Education Technology</a></li>
-                <li><a href="#!" style="color: #57068C">Healthcare</a></li>
-                <li><a href="#!" style="color: #57068C">Sustainability & Social Impact</a></li>
-            </ul>
-
-            <ul id="resources" class="dropdown-content">
-                <li><a href="#!" style="color: #57068C">FAQs</a></li>
-                <li><a href="#!" style="color: #57068C">APIs</a></li>
-            </ul>
-
-            <ul id="nav-mobile " class="left hide-on-med-and-down ">
-                <li><a href="index.html">HOME</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="tracks">TRACKS<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="resources">RESOURCES<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="past_sponsors.html ">PAST SPONSORS</a></li>
-                <li><a href="contact.php ">CONTACT</a></li>
-                <li><a href="HackNYU2018_Deck.pdf" target="_blank">SPONSORSHIP DECK</a></li>
-            </ul>
-
-            <ul class="side-nav collapsible" id="mobile-demo" data-collapsible="accordion">
-                <li><a href="index.html">HOME</a></li>
-                <li>
-                    <div class="collapsible-header" style="color: #212121; margin-left: 15px; font-weight: 500">TRACKS<i class="material-icons right">arrow_drop_down</i></div>
-                    <div class="collapsible-body" style="color: #212121">
-                        <ul>
-                            <li style="margin-left: 30px; font-size: 12px">Accessibility & Assistive Technology</li>
-                            <li style="margin-left: 30px; font-size: 12px">Education Technology</li>
-                            <li style="margin-left: 30px; font-size: 12px">Healthcare</li>
-                            <li style="margin-left: 30px; font-size: 12px">Sustainability & Social Impact</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header" style="color: #212121; margin-left: 15px; font-weight: 500">RESOURCES<i class="material-icons right">arrow_drop_down</i></div>
-                    <div class="collapsible-body" style="color: #212121">
-                        <ul>
-                            <li style="margin-left: 30px; font-size: 12px">FAQs</li>
-                            <li style="margin-left: 30px; font-size: 12px">APIs</li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="past_sponsors.html ">PAST SPONSORS</a></li>
-                <li><a href="contact.php ">CONTACT</a></li>
-                <li><a href="HackNYU2018_Deck.pdf" target="_blank">SPONSORSHIP DECK</a></li>
-            </ul>
-        </div>
-        <!--</div>-->
-    </nav>
-
-    <a id="mlh-trust-badge " style="display:block; max-width:100px; min-width:60px; position:fixed; right:50px; top:0; width:10%; z-index:10000 " href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2018&amp;utm_content=white " target="_blank" class="hide-on-med-and-down"><img src="images/mlh.svg " alt="Major League Hacking 2018 Hackathon Season " style="width:100% "></a>
-
-    <a id="mlh-trust-badge " style="display:block; max-width:100px; min-width:60px; position:fixed; left:25px; top:0; width:10%; z-index:10000 " href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2018&amp;utm_content=white " target="_blank" class="hide-on-large-only"><img src="images/mlh.svg " alt="Major League Hacking 2018 Hackathon Season " style="width:100% "></a>
-
-    <div class="row" style="padding-top: 10px; background-color: white">
-        <div class="col s12 m3 l3 push-m3 push-l3"><img class="animated fadeInLeft" id="logo" src="images/logo.JPG" style="display:block; margin:auto; padding-top: 35px"></div>
-        <div class="col s12 m2 l2 push-m3 push-l3">
-            <ul id="details" style="padding-left: 15px; padding-top: 5px">
-                <li class="animated fadeIn">
-                    <h3 style="font-family: sans-serif">HackNYU</h3>
-                </li>
-                <li class="animated fadeIn">Brooklyn · Shanghai · Abu Dhabi</li>
-                <li class="animated fadeIn">March 23 — 25, 2018</li><br>
-                <li><a class="waves-effect waves-light btn" style="background-color: black; color: white;">REGISTER</a></li>
-            </ul>
-        </div>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#">HackNYU</a></li>
+      <li><a href="#">Tracks</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Sponsors</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="cover">
+    <div class="container">
+    <img id="cover-logo" src="images/logo.svg">
+      <div id="cover-info">
+        <h1>HackNYU</h1>
+        <p class="info-line">March 23–25th, 2018</p>
+        <p class="info-line">Brooklyn · Shanghai · Abu Dhabi</p>
+      </div>
     </div>
-
-    <script>
-        $(document).ready(function() {
-            $(".button-collapse ").sideNav({
-                menuWidth: 240,
-                edge: 'right',
-                closeOnClick: true
-            });
-            $('.dropdown-button').dropdown({
-                belowOrigin: true // Displays dropdown below the button
-            });
-            /*Materialize.fadeInImage('#logo') */
-            Materialize.showStaggeredList('#details')
-        });
-
-    </script>
+  </div>
+  <div>
+  </div>
 </body>
-
 </html>
