@@ -1,0 +1,39 @@
+#cover {
+  margin-top: 58px;
+  padding-top: 2em;
+  height: 80vh;
+  overflow: auto; // prevent margin collapse
+  min-height: 300px;
+  background-color: $dark;
+  color: white;
+}
+
+#cover-logo {
+  display: block;
+  width: 40%;
+  min-height: 200px;
+  float: left;
+  padding-right: 10%;
+}
+
+#cover-info {
+  width: 50%;
+  float: left;
+  font-size: 24px;
+  padding-top: 3em;
+}
+
+.info-line {
+  margin: 0;
+}
+
+#registration-button {
+  background-color: $accent-color;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-right: 6em;
+
+  &:hover {
+    background-color: #D55EFF;
+  }
+}

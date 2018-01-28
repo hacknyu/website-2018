@@ -1,9 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-body {
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  margin: 0; }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-10px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInLeft {
+  animation-name: fadeInLeft; }
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+#curves {
+  fill: #222;
+  stroke-dasharray: 1000;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 12;
+  animation: dash 4s normal forwards linear;
+  stroke-dashoffset: 1000; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
 
 #navbar {
   display: block;
@@ -58,43 +80,8 @@ body {
   font-size: 24px;
   padding-top: 3em; }
 
-h1 {
-  font-size: 36px; }
-
 .info-line {
   margin: 0; }
-
-#curves {
-  fill: #222;
-  stroke-dasharray: 1000;
-  stroke: rgba(255, 255, 255, 0.5);
-  stroke-width: 12;
-  animation: dash 4s normal forwards linear;
-  stroke-dashoffset: 1000; }
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0; } }
-
-.container {
-  width: 42em;
-  margin: 0 auto; }
-
-.button {
-  display: inline-block;
-  padding: 0.5em 1.2em;
-  color: white;
-  text-decoration: none;
-  border-radius: 0.25em;
-  border: 2px white solid;
-  margin-right: 1em;
-  margin-bottom: 0.5em;
-  background-color: #222222; }
-  .button:hover {
-    transition-duration: 250ms;
-    background-color: #4e4e4e; }
-  .button:visited, .button:active {
-    color: white; }
 
 #registration-button {
   background-color: #C31AFF;
@@ -103,36 +90,6 @@ h1 {
   margin-right: 6em; }
   #registration-button:hover {
     background-color: #D55EFF; }
-
-h1 {
-  margin-top: 0; }
-
-p {
-  line-height: 1.45; }
-
-.page-section {
-  padding-top: 1.6em; }
-
-#copyright-footer {
-  margin-top: 3em;
-  background-color: #e6e6e6;
-  text-align: center;
-  padding: 2em; }
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-10px, 0, 0); }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0); } }
-
-.fadeInLeft {
-  animation-name: fadeInLeft; }
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both; }
 
 .social-media-icon {
   float: left;
@@ -163,3 +120,44 @@ p {
 
 .fa-snapchat {
   color: #FFFC00; }
+
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin: 0; }
+
+h1 {
+  font-size: 36px;
+  margin-top: 0; }
+
+p {
+  line-height: 1.45; }
+
+.container {
+  width: 42em;
+  margin: 0 auto; }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25em;
+  border: 2px white solid;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  background-color: #222222; }
+  .button:hover {
+    transition-duration: 250ms;
+    background-color: #4e4e4e; }
+  .button:visited, .button:active {
+    color: white; }
+
+.page-section {
+  padding-top: 1.6em; }
+
+#copyright-footer {
+  margin-top: 3em;
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 2em; }

@@ -2,114 +2,28 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 $body-font: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-$navbar-item-padding: 1.5em;
-
-$large: 800px;
-
 $accent-color: #C31AFF;
+$dark: #222222;
 
-@mixin clearfix() {
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
-}
+@import 'utils';
+@import 'animation';
+@import 'navbar';
+@import 'cover';
+@import 'social-media';
 
 body {
   font-family: $body-font;
   font-size: 20px;
   margin: 0;
-  // background-color: #222222;
-}
-
-#navbar {
-  @include clearfix();
-  display: block;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  z-index: 999;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding: 0 $navbar-item-padding;
-  }
-
-  a {
-    float: left;
-    display: block;
-    padding: $navbar-item-padding;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
-      background-color: rgb(230, 230, 230);
-    }
-
-    &:visited, &:active {
-      color: black;
-    }
-  }
-}
-
-#cover {
-  margin-top: 58px;
-  padding-top: 2em;
-  height: 80vh;
-  overflow: auto; // prevent margin collapse
-  min-height: 300px;
-  background-color: #222222;
-  color: white;
-}
-
-#cover-logo {
-  display: block;
-  width: 40%;
-  min-height: 200px;
-  float: left;
-  padding-right: 10%;
-}
-
-#cover-info {
-  width: 50%;
-  // padding-left: 10%;
-  float: left;
-  font-size: 24px;
-  padding-top: 3em;
 }
 
 h1 {
   font-size: 36px;
+  margin-top: 0;
 }
 
-.info-line {
-  margin: 0;
-}
-
-#curves {
-  fill: #222;
-  // fill-opacity: 1;
-  stroke-dasharray: 1000;
-  stroke: rgba(255, 255, 255, 0.5);
-  stroke-width: 12;
-  animation: dash 4s normal forwards linear;
-  stroke-dashoffset: 1000;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-    // stroke-dasharray: 1000;
-  }
+p {
+  line-height: 1.45;
 }
 
 .container {
@@ -126,7 +40,7 @@ h1 {
   border: 2px white solid;
   margin-right: 1em;
   margin-bottom: 0.5em;
-  background-color: #222222;
+  background-color: $dark;
 
   &:hover {
     transition-duration: 250ms;
@@ -138,25 +52,6 @@ h1 {
   }
 }
 
-#registration-button {
-  background-color: $accent-color;
-  font-weight: bold;
-  margin-top: 2em;
-  margin-right: 6em;
-
-  &:hover {
-    background-color: #D55EFF;
-  }
-}
-
-h1 {
-  margin-top: 0;
-}
-
-p {
-  line-height: 1.45;
-}
-
 .page-section {
   padding-top: 1.6em;
 }
@@ -166,62 +61,4 @@ p {
   background-color: rgb(230, 230, 230);
   text-align: center;
   padding: 2em;
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInLeft {
-  animation-name: fadeInLeft;
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.social-media-icon {
-  float: left;
-  display: block;
-}
-
-#social-media {
-  @include clearfix();
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 1em;
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    float: left;
-  }
-}
-
-.fa-facebook-square {
-  color: #3f51b5;
-}
-
-.fa-twitter-square {
-  color: #2196F3;
-}
-
-.fa-instagram {
-  color: $accent-color;
-}
-
-.fa-snapchat {
-  color: #FFFC00;
 }
