@@ -61,9 +61,8 @@
 #cover {
   margin-top: 58px;
   padding-top: 2em;
-  height: 80vh;
+  min-height: 80vh;
   overflow: auto;
-  min-height: 300px;
   background-color: #222222;
   color: white; }
 
@@ -73,12 +72,23 @@
   min-height: 200px;
   float: left;
   padding-right: 10%; }
+  @media (max-width: 700px) {
+    #cover-logo {
+      width: 75%;
+      height: auto;
+      padding: 0;
+      float: none;
+      margin: 0 auto; } }
 
 #cover-info {
   width: 50%;
   float: left;
   font-size: 24px;
-  padding-top: 3em; }
+  padding-top: 3em;
+  padding-bottom: 3em; }
+  @media (max-width: 700px) {
+    #cover-info {
+      width: 100%; } }
 
 .info-line {
   margin: 0; }
@@ -87,7 +97,7 @@
   background-color: #C31AFF;
   font-weight: bold;
   margin-top: 2em;
-  margin-right: 6em; }
+  margin-right: 0.25em; }
   #registration-button:hover {
     background-color: #D55EFF; }
 
@@ -134,8 +144,9 @@ p {
   line-height: 1.45; }
 
 .container {
-  width: 42em;
-  margin: 0 auto; }
+  max-width: 42em;
+  margin: 0 auto;
+  width: 90%; }
 
 .button {
   display: inline-block;

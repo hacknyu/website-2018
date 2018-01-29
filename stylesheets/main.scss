@@ -5,6 +5,8 @@ $body-font: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $accent-color: #C31AFF;
 $dark: #222222;
 
+$large: 700px;
+
 @import 'utils';
 @import 'animation';
 @import 'navbar';
@@ -27,8 +29,9 @@ p {
 }
 
 .container {
-  width: 42em;
+  max-width: 42em;
   margin: 0 auto;
+  width: 90%;
 }
 
 .button {
