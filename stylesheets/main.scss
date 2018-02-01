@@ -12,6 +12,7 @@ $large: 700px;
 @import 'navbar';
 @import 'cover';
 @import 'social-media';
+@import 'cards';
 
 body {
   font-family: $body-font;
@@ -58,8 +59,18 @@ p {
   }
 }
 
-.page-section {
+.first-section {
   padding-top: 1.6em;
+  margin-top: 58px;
+}
+
+.page-section {
+  // padding-top: 1.6em;
+  padding-bottom: 2em;
+}
+
+#content {
+  min-height: 100vh;
 }
 
 #copyright-footer {

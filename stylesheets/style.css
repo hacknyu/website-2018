@@ -63,7 +63,6 @@
       color: black; }
 
 #cover {
-  margin-top: 58px;
   padding-top: 2em;
   min-height: 90vh;
   overflow: auto;
@@ -145,6 +144,23 @@
 .fa-snapchat {
   color: #FFFC00; }
 
+.card {
+  box-sizing: border-box;
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  float: left;
+  display: block;
+  border-radius: 0.5em;
+  overflow: hidden; }
+
+.cards {
+  margin-right: -5%; }
+  .cards::after {
+    display: block;
+    content: "";
+    clear: both; }
+
 body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -184,8 +200,15 @@ p {
   .button:visited, .button:active {
     color: white; }
 
+.first-section {
+  padding-top: 1.6em;
+  margin-top: 58px; }
+
 .page-section {
-  padding-top: 1.6em; }
+  padding-bottom: 2em; }
+
+#content {
+  min-height: 100vh; }
 
 #copyright-footer {
   background-color: #e6e6e6;

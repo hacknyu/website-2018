@@ -1,0 +1,20 @@
+$margin-size: 5%;
+
+.card {
+  box-sizing: border-box;
+  width: 45%;
+  margin-right: $margin-size;
+  margin-bottom: $margin-size;
+  float: left;
+  display: block;
+  // border: 2px solid black;
+  border-radius: 0.5em;
+  // text-align: center;
+  overflow: hidden;
+  // padding: 1em;
+}
+
+.cards {
+  @include clearfix();
+  margin-right: -$margin-size;
+}
