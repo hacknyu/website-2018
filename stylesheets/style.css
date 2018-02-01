@@ -15,12 +15,16 @@
   animation-duration: 1s;
   animation-fill-mode: both; }
 
+#nodes {
+  fill: rgba(255, 255, 255, 0.5); }
+
 #curves {
   fill: #222;
   stroke-dasharray: 1000;
+  stroke: white;
   stroke: rgba(255, 255, 255, 0.5);
   stroke-width: 12;
-  animation: dash 4s normal forwards linear;
+  animation: dash 3s normal forwards linear;
   stroke-dashoffset: 1000; }
 
 @keyframes dash {
@@ -61,14 +65,14 @@
 #cover {
   margin-top: 58px;
   padding-top: 2em;
-  min-height: 80vh;
+  min-height: 90vh;
   overflow: auto;
   background-color: #222222;
   color: white; }
 
 #cover-logo {
   display: block;
-  width: 40%;
+  width: 45%;
   min-height: 200px;
   float: left;
   padding-right: 10%; }
@@ -81,14 +85,22 @@
       margin: 0 auto; } }
 
 #cover-info {
-  width: 50%;
+  width: 45%;
   float: left;
-  font-size: 24px;
-  padding-top: 3em;
-  padding-bottom: 3em; }
+  font-size: 20px;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+  color: white; }
   @media (max-width: 700px) {
     #cover-info {
       width: 100%; } }
+  #cover-info a {
+    color: white; }
+  #cover-info h1 {
+    margin-bottom: 0.5em; }
+
+#cover-container {
+  max-width: 36em; }
 
 .info-line {
   margin: 0; }
@@ -96,10 +108,12 @@
 #registration-button {
   background-color: #C31AFF;
   font-weight: bold;
-  margin-top: 2em;
-  margin-right: 0.25em; }
+  margin-top: 1.5em; }
   #registration-button:hover {
     background-color: #D55EFF; }
+
+#buttons .button {
+  width: 80%; }
 
 .social-media-icon {
   float: left;
@@ -134,7 +148,8 @@
 body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  margin: 0; }
+  margin: 0;
+  min-height: 100vh; }
 
 h1 {
   font-size: 36px;
@@ -147,6 +162,10 @@ p {
   max-width: 42em;
   margin: 0 auto;
   width: 90%; }
+  .container::after {
+    display: block;
+    content: "";
+    clear: both; }
 
 .button {
   display: inline-block;
@@ -155,7 +174,8 @@ p {
   text-decoration: none;
   border-radius: 0.25em;
   border: 2px white solid;
-  margin-right: 1em;
+  margin: 0;
+  margin-right: 0.25em;
   margin-bottom: 0.5em;
   background-color: #222222; }
   .button:hover {
@@ -168,7 +188,6 @@ p {
   padding-top: 1.6em; }
 
 #copyright-footer {
-  margin-top: 3em;
   background-color: #e6e6e6;
   text-align: center;
   padding: 2em; }

@@ -19,12 +19,19 @@
   animation-fill-mode: both;
 }
 
+#nodes {
+  // fill: white;
+  // fill-opacity: 1;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
 #curves {
   fill: #222;
   stroke-dasharray: 1000;
+  stroke: white;
   stroke: rgba(255, 255, 255, 0.5);
   stroke-width: 12;
-  animation: dash 4s normal forwards linear;
+  animation: dash 3s normal forwards linear;
   stroke-dashoffset: 1000;
 }
 

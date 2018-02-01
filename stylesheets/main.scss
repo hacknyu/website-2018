@@ -17,6 +17,7 @@ body {
   font-family: $body-font;
   font-size: 20px;
   margin: 0;
+  min-height: 100vh;
 }
 
 h1 {
@@ -29,6 +30,7 @@ p {
 }
 
 .container {
+  @include clearfix();
   max-width: 42em;
   margin: 0 auto;
   width: 90%;
@@ -41,7 +43,8 @@ p {
   text-decoration: none;
   border-radius: 0.25em;
   border: 2px white solid;
-  margin-right: 1em;
+  margin: 0;
+  margin-right: 0.25em;
   margin-bottom: 0.5em;
   background-color: $dark;
 
@@ -60,7 +63,6 @@ p {
 }
 
 #copyright-footer {
-  margin-top: 3em;
   background-color: rgb(230, 230, 230);
   text-align: center;
   padding: 2em;

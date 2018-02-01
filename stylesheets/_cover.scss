@@ -1,7 +1,7 @@
 #cover {
   margin-top: 58px;
   padding-top: 2em;
-  min-height: 80vh;
+  min-height: 90vh;
   overflow: auto; // prevent margin collapse
   background-color: $dark;
   color: white;
@@ -9,7 +9,7 @@
 
 #cover-logo {
   display: block;
-  width: 40%;
+  width: 45%;
   min-height: 200px;
   float: left;
   padding-right: 10%;
@@ -24,15 +24,28 @@
 }
 
 #cover-info {
-  width: 50%;
+  width: 45%;
   float: left;
-  font-size: 24px;
-  padding-top: 3em;
+  font-size: 20px;
+  padding-top: 1.5em;
   padding-bottom: 3em;
+  color: white;
 
   @media (max-width: $large) {
     width: 100%;
   }
+
+  a {
+    color: white;
+  }
+
+  h1 {
+    margin-bottom: 0.5em;
+  }
+}
+
+#cover-container {
+  max-width: 36em;
 }
 
 .info-line {
@@ -42,10 +55,16 @@
 #registration-button {
   background-color: $accent-color;
   font-weight: bold;
-  margin-top: 2em;
-  margin-right: 0.25em;
+  margin-top: 1.5em;
+  // margin-right: 0.25em;
 
   &:hover {
     background-color: #D55EFF;
+  }
+}
+
+#buttons {
+  .button {
+    width: 80%;
   }
 }
