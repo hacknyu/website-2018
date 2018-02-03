@@ -1,119 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>HackNYU</title>
-  <meta name="description" content="">
-  <link rel="stylesheet" href="stylesheets/style.css">
-</head>
-<body>
-  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-  <nav id="navbar">
-    <ul>
-      <li><a href="index.html">HackNYU</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="sponsor.html">Sponsor</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <section id="cover" class="first-section page-section">
-    <div id="cover-container" class="container">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HackNYU</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+    <nav id="navbar">
+      <a id="menu-toggle" style="font-size: 24.5px; padding: .5em; margin-left: 20px;" onclick="openNav()">&#9776;</a>
+      <ul class="top-ul">
+        <li class="top-li"><a href="/">HackNYU</a></li>
+        <li class="top-li"><a href="about.html">About</a></li>
+        <li class="top-li"><a href="sponsor.html">Sponsor</a></li>
+        <li class="top-li"><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul id="side-nav">
+        <a href="javascript:void(0)" onclick="closeNav()" style="text-align: right; font-size: 21px; margin:.5em; margin-left: 80%; width: 10px;">&times;</a>
+        <li class="side-li"><a href="/">HackNYU</a></li>
+        <li class="side-li"><a href="about.html">About</a></li>
+        <li class="side-li"><a href="sponsor.html">Sponsor</a></li>
+        <li class="side-li"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="cover" class="first-section page-section">
+      <div id="cover-container" class="container">
 
-      <!-- Inline SVG logo needed for animation -->
-      <svg id="cover-logo" width="384" height="487" viewBox="0 0 384 487" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="canvas" transform="translate(-5471 -5939)">
-          <g id="logo-separated">
-            <g id="primary">
-              <g id="arch">
-                <g id="curves">
-                  <g id="outer">
-                    <use xlink:href="#path0_fill" transform="translate(5480.36 5939.74)" clip-path="url(#path0_clip)"/>
+        <!-- Inline SVG logo needed for animation -->
+        <svg id="cover-logo" width="384" height="487" viewBox="0 0 384 487" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="canvas" transform="translate(-5471 -5939)">
+            <g id="logo-separated">
+              <g id="primary">
+                <g id="arch">
+                  <g id="curves">
+                    <g id="outer">
+                      <use xlink:href="#path0_fill" transform="translate(5480.36 5939.74)" clip-path="url(#path0_clip)"/>
+                    </g>
+                    <g id="middle">
+                      <use xlink:href="#path1_fill" transform="translate(5502.95 5964.52)" clip-path="url(#path1_clip)"/>
+                    </g>
+                    <g id="inner">
+                      <use xlink:href="#path2_fill" transform="translate(5526.37 5987.93)" clip-path="url(#path2_clip)"/>
+                    </g>
                   </g>
-                  <g id="middle">
-                    <use xlink:href="#path1_fill" transform="translate(5502.95 5964.52)" clip-path="url(#path1_clip)"/>
-                  </g>
-                  <g id="inner">
-                    <use xlink:href="#path2_fill" transform="translate(5526.37 5987.93)" clip-path="url(#path2_clip)"/>
+                  <g id="nodes">
+                    <g id="end">
+                      <g id="Vector (Stroke)">
+                        <use xlink:href="#path3_fill" transform="translate(5831.83 6332.87)"/>
+                      </g>
+                      <g id="Vector (Stroke)">
+                        <use xlink:href="#path4_fill" transform="translate(5806.79 6258)"/>
+                      </g>
+                      <g id="Vector (Stroke)">
+                        <use xlink:href="#path5_fill" transform="translate(5783.92 6300.2)"/>
+                      </g>
+                    </g>
+                    <g id="start">
+                      <g id="Vector (Stroke)">
+                        <use xlink:href="#path6_fill" transform="translate(5471.92 6400.94)"/>
+                      </g>
+                      <g id="Vector (Stroke)">
+                        <use xlink:href="#path7_fill" transform="translate(5494.52 6400.94)"/>
+                      </g>
+                      <g id="Vector (Stroke)">
+                        <use xlink:href="#path8_fill" transform="translate(5517.92 6400.94)"/>
+                      </g>
+                    </g>
                   </g>
                 </g>
-                <g id="nodes">
-                  <g id="end">
-                    <g id="Vector (Stroke)">
-                      <use xlink:href="#path3_fill" transform="translate(5831.83 6332.87)"/>
-                    </g>
-                    <g id="Vector (Stroke)">
-                      <use xlink:href="#path4_fill" transform="translate(5806.79 6258)"/>
-                    </g>
-                    <g id="Vector (Stroke)">
-                      <use xlink:href="#path5_fill" transform="translate(5783.92 6300.2)"/>
-                    </g>
-                  </g>
-                  <g id="start">
-                    <g id="Vector (Stroke)">
-                      <use xlink:href="#path6_fill" transform="translate(5471.92 6400.94)"/>
-                    </g>
-                    <g id="Vector (Stroke)">
-                      <use xlink:href="#path7_fill" transform="translate(5494.52 6400.94)"/>
-                    </g>
-                    <g id="Vector (Stroke)">
-                      <use xlink:href="#path8_fill" transform="translate(5517.92 6400.94)"/>
-                    </g>
-                  </g>
+                <g id="HACK NYU">
+                  <use xlink:href="#path9_fill" transform="translate(5599.85 6380.86)" fill="#FFFFFF"/>
                 </g>
-              </g>
-              <g id="HACK NYU">
-                <use xlink:href="#path9_fill" transform="translate(5599.85 6380.86)" fill="#FFFFFF"/>
               </g>
             </g>
           </g>
-        </g>
-        <defs>
-          <path id="path0_fill" fill-rule="evenodd" d="M 5.44482 182.68C 5.44482 84.812 84.8125 5.44482 182.68 5.44482L 182.68 0C 81.8052 0 0 81.8052 0 182.68L 0 463.643L 5.44482 463.643L 5.44482 182.68ZM 365.363 182.68C 365.363 81.8052 283.558 0 182.683 0L 182.683 5.44482C 280.55 5.44482 359.917 84.812 359.917 182.68L 359.923 182.68L 359.923 395.853L 365.368 395.853L 365.368 182.68L 365.363 182.68Z"/>
-          <path id="path1_fill" fill-rule="evenodd" d="M 160.083 5.44482C 74.4326 5.44482 5.44482 73.6841 5.44482 157.905L 5.44482 438.868L 0 438.868L 0 157.905C 0 70.6089 71.4937 0 160.083 0L 160.083 5.44482ZM 317.727 296.209L 317.727 157.906L 317.723 157.905C 317.723 70.646 247.083 0 160.09 0L 160.09 5.44482C 244.07 5.44482 312.278 73.647 312.278 157.905L 312.282 157.906L 312.282 296.209L 317.727 296.209Z"/>
-          <path id="path2_fill" fill-rule="evenodd" d="M 5.44482 134.492C 5.44482 63.3442 64.0811 5.44482 136.67 5.44482L 136.67 0C 61.1543 0 0 60.2573 0 134.492L 0 415.454L 5.44482 415.454L 5.44482 134.492ZM 271.436 134.491L 271.436 314.993L 265.991 314.993L 265.991 134.491C 265.99 63.3081 208.134 5.44482 136.671 5.44482L 136.671 0C 211.134 0 271.435 60.2935 271.436 134.491Z"/>
-          <path id="path3_fill" fill-rule="evenodd" d="M 11.1622 5.44501C 8.00471 5.44501 5.44501 8.00471 5.44501 11.1623C 5.44501 14.3199 8.00471 16.8796 11.1622 16.8796C 14.3198 16.8796 16.8795 14.3198 16.8795 11.1623C 16.8795 8.00473 14.3198 5.44501 11.1622 5.44501ZM 0 11.1623C 0 4.99755 4.99748 0 11.1622 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1622 22.3246C 4.99748 22.3246 0 17.327 0 11.1623Z"/>
-          <path id="path4_fill" fill-rule="evenodd" d="M 11.1622 5.44501C 8.00471 5.44501 5.44501 8.00471 5.44501 11.1623C 5.44501 14.3199 8.00471 16.8796 11.1622 16.8796C 14.3198 16.8796 16.8795 14.3198 16.8795 11.1623C 16.8795 8.00473 14.3198 5.44501 11.1622 5.44501ZM 0 11.1623C 0 4.99755 4.99748 0 11.1622 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1622 22.3246C 4.99748 22.3246 0 17.327 0 11.1623Z"/>
-          <path id="path5_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00473 5.44501 5.44501 8.00473 5.44501 11.1623C 5.44501 14.3198 8.00473 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3199 16.8795 11.1623C 16.8795 8.00471 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99754 0 11.1623 0C 17.3271 0 22.3245 4.99755 22.3245 11.1623C 22.3245 17.327 17.3271 22.3246 11.1623 22.3246C 4.99754 22.3246 0 17.327 0 11.1623Z"/>
-          <path id="path6_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00472 5.44501 5.44501 8.00472 5.44501 11.1623C 5.44501 14.3199 8.00472 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3198 16.8795 11.1623C 16.8795 8.00473 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99751 0 11.1623 0C 17.327 0 22.3246 4.99754 22.3246 11.1623C 22.3246 17.327 17.327 22.3246 11.1623 22.3246C 4.99751 22.3246 0 17.327 0 11.1623Z"/>
-          <path id="path7_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00472 5.44501 5.44501 8.00472 5.44501 11.1623C 5.44501 14.3199 8.00472 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3199 16.8795 11.1623C 16.8795 8.00472 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99751 0 11.1623 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1623 22.3246C 4.99751 22.3246 0 17.327 0 11.1623Z"/>
-          <path id="path8_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00472 5.44501 5.44501 8.00472 5.44501 11.1623C 5.44501 14.3199 8.00472 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3199 16.8795 11.1623C 16.8795 8.00472 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99751 0 11.1623 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1623 22.3246C 4.99751 22.3246 0 17.327 0 11.1623Z"/>
-          <path id="path9_fill" d="M 9.73047 11.9399L 9.73047 25.4341L 26.3687 25.4341L 26.3687 11.9399L 32.5649 11.9399L 32.5649 44L 26.3687 44L 26.3687 30.46L 9.73047 30.46L 9.73047 44L 3.53418 44L 3.53418 11.9399L 9.73047 11.9399ZM 56.3743 11.9399L 70.534 44L 63.9934 44L 60.6658 36.1973L 46.4143 36.1973L 43.3162 44L 36.8216 44L 50.0403 11.9399L 56.3743 11.9399ZM 48.2962 31.4927L 58.6463 31.4927L 53.2303 18.8018L 48.2962 31.4927ZM 90.878 11.5269C 92.6986 11.5269 94.481 11.7334 96.2252 12.1465C 97.9693 12.5596 99.8511 13.2633 101.871 14.2578L 101.871 20.0869C 99.897 18.9548 98.0687 18.1362 96.3858 17.6313C 94.7182 17.1265 92.974 16.874 91.1534 16.874C 88.8738 16.874 86.816 17.3483 84.98 18.2969C 83.1441 19.2301 81.7136 20.5535 80.6885 22.2671C 79.6788 23.9806 79.1739 25.8854 79.1739 27.9814C 79.1739 30.1234 79.6788 32.0435 80.6885 33.7417C 81.6983 35.4399 83.1212 36.7557 84.9571 37.689C 86.793 38.6069 88.8585 39.0659 91.1534 39.0659C 92.9128 39.0659 94.5881 38.8135 96.1793 38.3086C 97.7857 37.8037 99.8052 36.8934 102.238 35.5776L 102.238 41.4067C 100.157 42.493 98.2447 43.2656 96.5005 43.7246C 94.7564 44.1836 92.7216 44.4131 90.3961 44.4131C 87.0149 44.4131 83.9932 43.7399 81.3311 42.3936C 78.669 41.0472 76.573 39.1118 75.043 36.5874C 73.5284 34.0477 72.7711 31.2708 72.7711 28.2568C 72.7711 25.0286 73.5513 22.1294 75.1119 19.5591C 76.6877 16.9888 78.845 15.0075 81.5836 13.6152C 84.3375 12.223 87.4356 11.5269 90.878 11.5269ZM 114.137 11.9399L 114.137 26.7422L 114.274 26.7422L 126.024 11.9399L 133.07 11.9399L 121.136 27.0405L 136.604 44L 128.663 44L 114.137 28.2568L 114.137 44L 107.94 44L 107.94 11.9399L 114.137 11.9399ZM 159.392 11.9399L 178.439 34.3154L 178.439 11.9399L 184.498 11.9399L 184.498 44L 179.174 44L 160.011 21.2573L 160.011 44L 153.953 44L 153.953 11.9399L 159.392 11.9399ZM 196.19 11.9399L 203.947 22.6572L 211.796 11.9399L 219.162 11.9399L 207.045 28.1191L 207.045 44L 200.849 44L 200.849 28.0732L 188.663 11.9399L 196.19 11.9399ZM 229.11 11.9399L 229.11 30.5977C 229.11 32.5101 229.393 34.0324 229.959 35.1646C 230.541 36.2967 231.482 37.23 232.782 37.9644C 234.083 38.6987 235.597 39.0659 237.326 39.0659C 239.223 39.0659 240.83 38.7217 242.145 38.0332C 243.477 37.3294 244.448 36.3809 245.06 35.1875C 245.672 33.9788 245.978 32.3112 245.978 30.1846L 245.978 11.9399L 252.174 11.9399L 252.174 30.9878C 252.174 35.3022 250.881 38.6222 248.296 40.9478C 245.71 43.258 242.054 44.4131 237.326 44.4131C 234.358 44.4131 231.78 43.8853 229.592 42.8296C 227.42 41.7739 225.76 40.2516 224.612 38.2627C 223.465 36.2585 222.891 33.91 222.891 31.2173L 222.891 11.9399L 229.11 11.9399Z"/>
+          <defs>
+            <path id="path0_fill" fill-rule="evenodd" d="M 5.44482 182.68C 5.44482 84.812 84.8125 5.44482 182.68 5.44482L 182.68 0C 81.8052 0 0 81.8052 0 182.68L 0 463.643L 5.44482 463.643L 5.44482 182.68ZM 365.363 182.68C 365.363 81.8052 283.558 0 182.683 0L 182.683 5.44482C 280.55 5.44482 359.917 84.812 359.917 182.68L 359.923 182.68L 359.923 395.853L 365.368 395.853L 365.368 182.68L 365.363 182.68Z"/>
+            <path id="path1_fill" fill-rule="evenodd" d="M 160.083 5.44482C 74.4326 5.44482 5.44482 73.6841 5.44482 157.905L 5.44482 438.868L 0 438.868L 0 157.905C 0 70.6089 71.4937 0 160.083 0L 160.083 5.44482ZM 317.727 296.209L 317.727 157.906L 317.723 157.905C 317.723 70.646 247.083 0 160.09 0L 160.09 5.44482C 244.07 5.44482 312.278 73.647 312.278 157.905L 312.282 157.906L 312.282 296.209L 317.727 296.209Z"/>
+            <path id="path2_fill" fill-rule="evenodd" d="M 5.44482 134.492C 5.44482 63.3442 64.0811 5.44482 136.67 5.44482L 136.67 0C 61.1543 0 0 60.2573 0 134.492L 0 415.454L 5.44482 415.454L 5.44482 134.492ZM 271.436 134.491L 271.436 314.993L 265.991 314.993L 265.991 134.491C 265.99 63.3081 208.134 5.44482 136.671 5.44482L 136.671 0C 211.134 0 271.435 60.2935 271.436 134.491Z"/>
+            <path id="path3_fill" fill-rule="evenodd" d="M 11.1622 5.44501C 8.00471 5.44501 5.44501 8.00471 5.44501 11.1623C 5.44501 14.3199 8.00471 16.8796 11.1622 16.8796C 14.3198 16.8796 16.8795 14.3198 16.8795 11.1623C 16.8795 8.00473 14.3198 5.44501 11.1622 5.44501ZM 0 11.1623C 0 4.99755 4.99748 0 11.1622 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1622 22.3246C 4.99748 22.3246 0 17.327 0 11.1623Z"/>
+            <path id="path4_fill" fill-rule="evenodd" d="M 11.1622 5.44501C 8.00471 5.44501 5.44501 8.00471 5.44501 11.1623C 5.44501 14.3199 8.00471 16.8796 11.1622 16.8796C 14.3198 16.8796 16.8795 14.3198 16.8795 11.1623C 16.8795 8.00473 14.3198 5.44501 11.1622 5.44501ZM 0 11.1623C 0 4.99755 4.99748 0 11.1622 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1622 22.3246C 4.99748 22.3246 0 17.327 0 11.1623Z"/>
+            <path id="path5_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00473 5.44501 5.44501 8.00473 5.44501 11.1623C 5.44501 14.3198 8.00473 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3199 16.8795 11.1623C 16.8795 8.00471 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99754 0 11.1623 0C 17.3271 0 22.3245 4.99755 22.3245 11.1623C 22.3245 17.327 17.3271 22.3246 11.1623 22.3246C 4.99754 22.3246 0 17.327 0 11.1623Z"/>
+            <path id="path6_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00472 5.44501 5.44501 8.00472 5.44501 11.1623C 5.44501 14.3199 8.00472 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3198 16.8795 11.1623C 16.8795 8.00473 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99751 0 11.1623 0C 17.327 0 22.3246 4.99754 22.3246 11.1623C 22.3246 17.327 17.327 22.3246 11.1623 22.3246C 4.99751 22.3246 0 17.327 0 11.1623Z"/>
+            <path id="path7_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00472 5.44501 5.44501 8.00472 5.44501 11.1623C 5.44501 14.3199 8.00472 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3199 16.8795 11.1623C 16.8795 8.00472 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99751 0 11.1623 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1623 22.3246C 4.99751 22.3246 0 17.327 0 11.1623Z"/>
+            <path id="path8_fill" fill-rule="evenodd" d="M 11.1623 5.44501C 8.00472 5.44501 5.44501 8.00472 5.44501 11.1623C 5.44501 14.3199 8.00472 16.8796 11.1623 16.8796C 14.3198 16.8796 16.8795 14.3199 16.8795 11.1623C 16.8795 8.00472 14.3198 5.44501 11.1623 5.44501ZM 0 11.1623C 0 4.99754 4.99751 0 11.1623 0C 17.327 0 22.3245 4.99754 22.3245 11.1623C 22.3245 17.327 17.327 22.3246 11.1623 22.3246C 4.99751 22.3246 0 17.327 0 11.1623Z"/>
+            <path id="path9_fill" d="M 9.73047 11.9399L 9.73047 25.4341L 26.3687 25.4341L 26.3687 11.9399L 32.5649 11.9399L 32.5649 44L 26.3687 44L 26.3687 30.46L 9.73047 30.46L 9.73047 44L 3.53418 44L 3.53418 11.9399L 9.73047 11.9399ZM 56.3743 11.9399L 70.534 44L 63.9934 44L 60.6658 36.1973L 46.4143 36.1973L 43.3162 44L 36.8216 44L 50.0403 11.9399L 56.3743 11.9399ZM 48.2962 31.4927L 58.6463 31.4927L 53.2303 18.8018L 48.2962 31.4927ZM 90.878 11.5269C 92.6986 11.5269 94.481 11.7334 96.2252 12.1465C 97.9693 12.5596 99.8511 13.2633 101.871 14.2578L 101.871 20.0869C 99.897 18.9548 98.0687 18.1362 96.3858 17.6313C 94.7182 17.1265 92.974 16.874 91.1534 16.874C 88.8738 16.874 86.816 17.3483 84.98 18.2969C 83.1441 19.2301 81.7136 20.5535 80.6885 22.2671C 79.6788 23.9806 79.1739 25.8854 79.1739 27.9814C 79.1739 30.1234 79.6788 32.0435 80.6885 33.7417C 81.6983 35.4399 83.1212 36.7557 84.9571 37.689C 86.793 38.6069 88.8585 39.0659 91.1534 39.0659C 92.9128 39.0659 94.5881 38.8135 96.1793 38.3086C 97.7857 37.8037 99.8052 36.8934 102.238 35.5776L 102.238 41.4067C 100.157 42.493 98.2447 43.2656 96.5005 43.7246C 94.7564 44.1836 92.7216 44.4131 90.3961 44.4131C 87.0149 44.4131 83.9932 43.7399 81.3311 42.3936C 78.669 41.0472 76.573 39.1118 75.043 36.5874C 73.5284 34.0477 72.7711 31.2708 72.7711 28.2568C 72.7711 25.0286 73.5513 22.1294 75.1119 19.5591C 76.6877 16.9888 78.845 15.0075 81.5836 13.6152C 84.3375 12.223 87.4356 11.5269 90.878 11.5269ZM 114.137 11.9399L 114.137 26.7422L 114.274 26.7422L 126.024 11.9399L 133.07 11.9399L 121.136 27.0405L 136.604 44L 128.663 44L 114.137 28.2568L 114.137 44L 107.94 44L 107.94 11.9399L 114.137 11.9399ZM 159.392 11.9399L 178.439 34.3154L 178.439 11.9399L 184.498 11.9399L 184.498 44L 179.174 44L 160.011 21.2573L 160.011 44L 153.953 44L 153.953 11.9399L 159.392 11.9399ZM 196.19 11.9399L 203.947 22.6572L 211.796 11.9399L 219.162 11.9399L 207.045 28.1191L 207.045 44L 200.849 44L 200.849 28.0732L 188.663 11.9399L 196.19 11.9399ZM 229.11 11.9399L 229.11 30.5977C 229.11 32.5101 229.393 34.0324 229.959 35.1646C 230.541 36.2967 231.482 37.23 232.782 37.9644C 234.083 38.6987 235.597 39.0659 237.326 39.0659C 239.223 39.0659 240.83 38.7217 242.145 38.0332C 243.477 37.3294 244.448 36.3809 245.06 35.1875C 245.672 33.9788 245.978 32.3112 245.978 30.1846L 245.978 11.9399L 252.174 11.9399L 252.174 30.9878C 252.174 35.3022 250.881 38.6222 248.296 40.9478C 245.71 43.258 242.054 44.4131 237.326 44.4131C 234.358 44.4131 231.78 43.8853 229.592 42.8296C 227.42 41.7739 225.76 40.2516 224.612 38.2627C 223.465 36.2585 222.891 33.91 222.891 31.2173L 222.891 11.9399L 229.11 11.9399Z"/>
 
-          <clipPath id="path0_clip">
-            <use xlink:href="#path0_fill"/>
-          </clipPath>
-          <clipPath id="path1_clip">
-            <use xlink:href="#path1_fill"/>
-          </clipPath>
-          <clipPath id="path2_clip">
-            <use xlink:href="#path2_fill"/>
-          </clipPath>
-        </defs>
-      </svg>
-    <!-- <img id="cover-logo" src="images/logo.svg"> -->
-      <div id="cover-info">
-        <h1 class="animated fadeInLeft">HackNYU</h1>
-        <p class="info-line animated fadeInLeft">March 23–25th, 2018</p>
-        <p class="info-line animated fadeInLeft">Brooklyn · Shanghai · Abu Dhabi</p>
-        <div id="buttons">
-          <a href="https://www.eventbrite.com/e/hacknyu-2018-tickets-42755438668" id="registration-button" class="animated fadeInLeft button">Register</a>
-          <a href="about.html" class="animated fadeInLeft button">Learn more</a>
-          <a href="#about" class="animated fadeInLeft button">Volunteer</a>
-          <a href="#about" class="animated fadeInLeft button">Sponsor</a>
+            <clipPath id="path0_clip">
+              <use xlink:href="#path0_fill"/>
+            </clipPath>
+            <clipPath id="path1_clip">
+              <use xlink:href="#path1_fill"/>
+            </clipPath>
+            <clipPath id="path2_clip">
+              <use xlink:href="#path2_fill"/>
+            </clipPath>
+          </defs>
+        </svg>
+      <!-- <img id="cover-logo" src="images/logo.svg"> -->
+        <div id="cover-info">
+          <h1 class="animated fadeInLeft">HackNYU</h1>
+          <p class="info-line animated fadeInLeft">March 23–25th, 2018</p>
+          <p class="info-line animated fadeInLeft">Brooklyn · Shanghai · Abu Dhabi</p>
+          <div id="buttons">
+            <a href="https://www.eventbrite.com/e/hacknyu-2018-tickets-42755438668" id="registration-button" class="animated fadeInLeft button">Register</a>
+            <a href="about.html" class="animated fadeInLeft button">Learn more</a>
+            <a href="#about" class="animated fadeInLeft button">Volunteer</a>
+            <a href="#about" class="animated fadeInLeft button">Sponsor</a>
+          </div>
+          <p class="info-line" style="font-size: 0.75em; padding-top: 1em;">All participants are expected to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a></p>
         </div>
-        <p class="info-line" style="font-size: 0.75em; padding-top: 1em;">All participants are expected to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a></p>
       </div>
-    </div>
-  </section>
-  <footer id="copyright-footer">
-    <ul id="social-media">
-      <li><a href=""><i class="fa fa-facebook-square fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-twitter-square fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-snapchat fa-2x"></i></a></li>
-    </ul>
-    © Copyright HackNYU 2018
-  </footer>
-</body>
+    </section>
+    <footer id="copyright-footer">
+      <ul id="social-media">
+        <li><a href=""><i class="fa fa-facebook-square fa-2x"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter-square fa-2x"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
+        <li><a href=""><i class="fa fa-snapchat fa-2x"></i></a></li>
+      </ul>
+      © Copyright HackNYU 2018
+    </footer>
+    <script>
+      function openNav() {
+          document.getElementById("side-nav").style.width = "70vw";
+      }
+
+      function closeNav() {
+          document.getElementById("side-nav").style.width = "0";
+      }
+    </script>
+  </body>
 </html>
