@@ -65,6 +65,7 @@ p {
 }
 
 .page-section {
+  @include clearfix();
   // padding-top: 1.6em;
   padding-bottom: 2em;
 }
@@ -84,8 +85,4 @@ p {
   border-radius: 0.25em;
   border: 2px goldenrod solid;
   padding: 1em;
-}
-
-h1 {
-  
 }

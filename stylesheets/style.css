@@ -206,6 +206,10 @@ p {
 
 .page-section {
   padding-bottom: 2em; }
+  .page-section::after {
+    display: block;
+    content: "";
+    clear: both; }
 
 #content {
   min-height: 100vh; }
