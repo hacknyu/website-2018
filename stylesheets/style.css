@@ -89,17 +89,14 @@
   }
 }
 
-#navbar li {
-    padding: 1.5em;
-}
-
 #navbar .top-li {
   float: left;
 }
 
 #navbar a {
+  padding: 1.5em;
   display: block;
-
+  height: 100%;
   color: black;
   text-decoration: none;
   text-transform: uppercase;
