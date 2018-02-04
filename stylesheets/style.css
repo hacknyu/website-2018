@@ -104,7 +104,7 @@
   background-color: darkgrey; }
 
 #cover {
-  padding-top: 2em;
+  padding-top: 2.5em;
   min-height: 90vh;
   overflow: auto;
   background-color: #222222;
@@ -230,7 +230,6 @@ p {
   color: white;
   text-decoration: none;
   border-radius: 0.25em;
-  border: 2px white solid;
   margin: 0;
   margin-right: 0.25em;
   margin-bottom: 0.5em;
