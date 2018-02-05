@@ -104,7 +104,7 @@
   background-color: darkgrey; }
 
 #cover {
-  padding-top: 3em;
+  padding-top: 2em;
   min-height: 90vh;
   overflow: auto;
   background-color: #222222;
@@ -221,7 +221,12 @@ body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   margin: 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #222222;
+  color: white; }
+
+a {
+  color: white; }
 
 h1 {
   font-size: 36px;
@@ -270,7 +275,7 @@ p {
   min-height: 100vh; }
 
 #copyright-footer {
-  background-color: #e6e6e6;
+  background: #222222;
   text-align: center;
   padding: 2em; }
 
