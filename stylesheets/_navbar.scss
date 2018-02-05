@@ -55,6 +55,10 @@
   #navbar #menu-toggle {
     display: block;
   }
+  .column {
+    max-width: 100%;
+    flex: 100%;
+  }
 }
 
 #navbar .top-li {

@@ -7,7 +7,6 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
-
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -30,78 +29,6 @@
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
-#navbar {
-  display: block;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 4.17em;
-  background-color: white;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  z-index: 999; }
-
-#navbar::after {
-  display: block;
-  content: "";
-  clear: both; }
-
-#navbar .top-ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  padding: 0 1.5em; }
-
-#navbar #side-nav {
-  top: 0;
-  padding-left: 0;
-  overflow-x: hidden;
-  background-color: white;
-  width: 0;
-  height: 100vh;
-  display: block;
-  position: absolute;
-  margin: 0;
-  list-style: none;
-  padding-top: 5vh;
-  text-align: center;
-  z-index: 5;
-  transition: 0.5s; }
-
-#navbar #menu-toggle {
-  z-index: 1;
-  display: none;
-  position: absolute; }
-
-@media screen and (max-width: 700px) {
-  #navbar .top-li {
-    display: none; }
-
-  #navbar #menu-toggle {
-    display: block; } }
-#navbar .top-li {
-  float: left; }
-
-#navbar a {
-  padding: 1.5em;
-  display: block;
-  height: 100%;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-#navbar li:hover, #menu-toggle:hover {
-  background-color: #e6e6e6;
-  cursor: pointer; }
-
-#navbar a:visited {
-  color: black; }
-
-#navbar li:active {
-  background-color: darkgrey; }
-
 #cover {
   padding-top: 2em;
   min-height: 90vh;
@@ -187,7 +114,7 @@
 .card {
   box-sizing: border-box;
   width: 100%;
-  margin-right: 5%;
+  padding-right: 5%;
   margin-bottom: 5%;
   float: left;
   display: block;
@@ -204,12 +131,11 @@
 
 .column {
   flex: 50%;
-  max-width: 50%;
+  max-width: 100%;
   padding: 0 4px; }
 
 .sponsor-img {
-  max-width: 50%;
-  max-height: 75px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -217,16 +143,93 @@
 
 .sponsor {
   text-align: center;
-  width: 33.333%;
+  width: 100%;
   float: left;
-  height: 100px;
+  height: 200px;
   position: relative; }
+
+#navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4.17em;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  z-index: 999; }
+
+#navbar::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+#navbar .top-ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 1.5em; }
+
+#navbar #side-nav {
+  top: 0;
+  padding-left: 0;
+  overflow-x: hidden;
+  background-color: white;
+  width: 0;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  margin: 0;
+  list-style: none;
+  padding-top: 5vh;
+  text-align: center;
+  z-index: 5;
+  transition: 0.5s; }
+
+#navbar #menu-toggle {
+  z-index: 1;
+  display: none;
+  position: absolute; }
+
+@media screen and (max-width: 700px) {
+  #navbar .top-li {
+    display: none; }
+
+  #navbar #menu-toggle {
+    display: block; }
+
+  .column {
+    max-width: 100%;
+    flex: 100%; } }
+#navbar .top-li {
+  float: left; }
+
+#navbar a {
+  padding: 1.5em;
+  display: block;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#navbar li:hover, #menu-toggle:hover {
+  background-color: #e6e6e6;
+  cursor: pointer; }
+
+#navbar a:visited {
+  color: black; }
+
+#navbar li:active {
+  background-color: darkgrey; }
 
 body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   margin: 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  color: white; }
 
 h1 {
   font-size: 36px;
@@ -272,7 +275,8 @@ p {
     clear: both; }
 
 #content {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #222222; }
 
 #copyright-footer {
   background: #222222;
@@ -281,12 +285,9 @@ p {
   color: white; }
 
 .alert {
-  background-color: yellow;
-  color: black;
+  background-color: #C31AFF;
+  color: white;
   border-radius: 0.25em;
-  border: 2px goldenrod solid;
   padding: 1em; }
   .alert a {
-    color: black; }
-
-/*# sourceMappingURL=main.css.map */
+    color: white; }

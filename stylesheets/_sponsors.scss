@@ -1,6 +1,5 @@
 .sponsor-img {
-  max-width: 50%;
-  max-height: 75px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9,8 +8,8 @@
 
 .sponsor {
   text-align: center;
-  width: 33.333%;
+  width: 100%;
   float: left;
-  height: 100px;
+  height: 200px;
   position: relative;
 }
