@@ -2,7 +2,7 @@ $margin-size: 5%;
 
 .card {
   box-sizing: border-box;
-  width: 45%;
+  width: 100%;
   margin-right: $margin-size;
   margin-bottom: $margin-size;
   float: left;
@@ -17,4 +17,11 @@ $margin-size: 5%;
 .cards {
   @include clearfix();
   margin-right: -$margin-size;
+  display: flex;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
 }

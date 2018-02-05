@@ -30,7 +30,6 @@
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
-
 #navbar {
   display: block;
   position: fixed;
@@ -79,9 +78,9 @@
 @media screen and (max-width: 700px) {
   #navbar .top-li {
     display: none; }
+
   #navbar #menu-toggle {
     display: block; } }
-
 #navbar .top-li {
   float: left; }
 
@@ -187,7 +186,7 @@
 
 .card {
   box-sizing: border-box;
-  width: 45%;
+  width: 100%;
   margin-right: 5%;
   margin-bottom: 5%;
   float: left;
@@ -196,11 +195,17 @@
   overflow: hidden; }
 
 .cards {
-  margin-right: -5%; }
+  margin-right: -5%;
+  display: flex; }
   .cards::after {
     display: block;
     content: "";
     clear: both; }
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px; }
 
 .sponsor-img {
   max-width: 50%;
@@ -283,3 +288,5 @@ p {
   padding: 1em; }
   .alert a {
     color: black; }
+
+/*# sourceMappingURL=main.css.map */
