@@ -202,7 +202,10 @@
 
   .column {
     max-width: 100%;
-    flex: 100%; } }
+    flex: 100%; }
+
+  .cards {
+    display: block; } }
 #navbar .top-li {
   float: left; }
 
