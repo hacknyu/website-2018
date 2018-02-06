@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-@font-face {
-  font-family: Gotham;
-  src: url("fonts/GothamLight/Gotham-Light.ttf"); }
-
-@font-face {
-  font-family: Gotham-Book;
-  font-weight: bold;
-  src: url("fonts/GothamBook/Gotham-Book.ttf"); }
-
-@font-face {
-  font-family: Gotham-Medium;
-  font-weight: bold;
-  src: url("fonts/Gotham Medium/Gotham-Medium.ttf"); }
-
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -33,7 +19,7 @@
   fill: rgba(255, 255, 255, 0.5); }
 
 #curves {
-  fill: #222;
+  fill: #272425;
   stroke-dasharray: 1000;
   stroke: white;
   stroke: rgba(255, 255, 255, 0.5);
@@ -261,11 +247,12 @@
   background-color: darkgrey; }
 
 body {
-  font-family: Gotham, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   margin: 0;
   min-height: 100vh;
-  color: white; }
+  color: white;
+  background-color: #272425; }
 
 h1 {
   font-size: 36px;
