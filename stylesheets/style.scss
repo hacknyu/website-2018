@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
-$body-font: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-face { font-family: Gotham ; src: url('/stylesheets/fonts/GothamLight/Gotham-Light.ttf'); } 
+@font-face { font-family: Gotham-Book; font-weight: bold; src: url('/stylesheets/fonts/GothamBook/Gotham-Book.ttf');}
+
+$body-font: Gotham, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $accent-color: #C31AFF;
 $dark: #222222;
 
@@ -26,6 +29,7 @@ body {
 h1 {
   font-size: 36px;
   margin-top: 0;
+  font-family: Gotham-Book, Arial;
 }
 
 p {
