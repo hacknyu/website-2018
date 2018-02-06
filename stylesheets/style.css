@@ -50,7 +50,8 @@
       height: auto;
       padding: 0;
       float: none;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-bottom: 1em; } }
 
 #cover-info {
   width: 45%;
