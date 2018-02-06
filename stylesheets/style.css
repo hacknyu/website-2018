@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@font-face {
+  font-family: Gotham;
+  src: url("/stylesheets/fonts/GothamLight/Gotham-Light.ttf"); }
+@font-face {
+  font-family: Gotham-Book;
+  font-weight: bold;
+  src: url("/stylesheets/fonts/GothamBook/Gotham-Book.ttf"); }
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -172,6 +179,13 @@
   list-style: none;
   padding: 0 1.5em; }
 
+#navbar .top-right-ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 1.5em; }
+
 #navbar #side-nav {
   top: 0;
   padding-left: 0;
@@ -193,6 +207,10 @@
   display: none;
   position: absolute; }
 
+#navbar .top-right-li {
+  float: right;
+  margin-right: 120px; }
+
 @media screen and (max-width: 700px) {
   #navbar .top-li {
     display: none; }
@@ -205,7 +223,13 @@
     flex: 100%; }
 
   .cards {
-    display: block; } }
+    display: block; }
+
+  #navbar .top-right-li {
+    margin-right: 100px; } }
+@media screen and (max-width: 1000px) {
+  #navbar .top-right-li {
+    margin-right: 150px; } }
 #navbar .top-li {
   float: left; }
 
@@ -228,7 +252,7 @@
   background-color: darkgrey; }
 
 body {
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Gotham, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   margin: 0;
   min-height: 100vh;
@@ -236,7 +260,8 @@ body {
 
 h1 {
   font-size: 36px;
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: Gotham-Book, Arial; }
 
 p {
   line-height: 1.45; }
