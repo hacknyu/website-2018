@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-@font-face {
-  font-family: Gotham;
-  src: url("fonts/GothamLight/Gotham-Light.ttf"); }
-@font-face {
-  font-family: Gotham-Book;
-  font-weight: bold;
-  src: url("fonts/GothamBook/Gotham-Book.ttf"); }
-@font-face {
-  font-family: Gotham-Medium;
-  font-weight: bold;
-  src: url("fonts/Gotham Medium/Gotham-Medium.ttf"); }
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -18,6 +7,7 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
+
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -29,7 +19,7 @@
   fill: rgba(255, 255, 255, 0.5); }
 
 #curves {
-  fill: #222;
+  fill: #272425;
   stroke-dasharray: 1000;
   stroke: white;
   stroke: rgba(255, 255, 255, 0.5);
@@ -40,6 +30,7 @@
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
+
 #cover {
   padding-top: 2em;
   min-height: 90vh;
@@ -59,7 +50,8 @@
       height: auto;
       padding: 0;
       float: none;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-bottom: 1em; } }
 
 #cover-info {
   width: 45%;
@@ -123,30 +115,26 @@
   color: #FFFC00; }
 
 .card {
-  box-sizing: border-box;
-  width: 100%;
+  width: 45%;
   padding-right: 5%;
   margin-bottom: 5%;
   float: left;
   display: block;
-  border-radius: 0.5em;
-  overflow: hidden; }
+  border-radius: 0.5em; }
+  @media (max-width: 700px) {
+    .card {
+      width: 100%; } }
 
 .cards {
-  margin-right: -5%;
-  display: flex; }
+  margin-right: -5%; }
   .cards::after {
     display: block;
     content: "";
     clear: both; }
 
-.column {
-  flex: 50%;
-  max-width: 100%;
-  padding: 0 4px; }
-
 .sponsor-img {
-  width: 100%;
+  max-width: 50%;
+  max-height: 75px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -154,9 +142,9 @@
 
 .sponsor {
   text-align: center;
-  width: 100%;
+  width: 33.333%;
   float: left;
-  height: 200px;
+  height: 100px;
   position: relative; }
 
 #navbar {
@@ -219,22 +207,20 @@
 @media screen and (max-width: 700px) {
   #navbar .top-li {
     display: none; }
-
   #navbar #menu-toggle {
     display: block; }
-
   .column {
     max-width: 100%;
     flex: 100%; }
-
   .cards {
     display: block; }
-
   #navbar .top-right-li {
     margin-right: 100px; } }
+
 @media screen and (max-width: 1000px) {
   #navbar .top-right-li {
     margin-right: 150px; } }
+
 #navbar .top-li {
   float: left; }
 
@@ -257,16 +243,19 @@
   background-color: darkgrey; }
 
 body {
-  font-family: Gotham, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   margin: 0;
   min-height: 100vh;
+  color: white;
+  background-color: #272425; }
+
+a {
   color: white; }
 
 h1 {
   font-size: 36px;
-  margin-top: 0;
-  font-family: Gotham-Book, Arial; }
+  margin-top: 0; }
 
 p {
   line-height: 1.45; }
