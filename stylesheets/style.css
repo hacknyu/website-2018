@@ -115,27 +115,22 @@
   color: #FFFC00; }
 
 .card {
-  box-sizing: border-box;
-  width: 100%;
+  width: 45%;
   padding-right: 5%;
   margin-bottom: 5%;
   float: left;
   display: block;
-  border-radius: 0.5em;
-  overflow: hidden; }
+  border-radius: 0.5em; }
+  @media (max-width: 700px) {
+    .card {
+      width: 100%; } }
 
 .cards {
-  margin-right: -5%;
-  display: flex; }
+  margin-right: -5%; }
   .cards::after {
     display: block;
     content: "";
     clear: both; }
-
-.column {
-  flex: 50%;
-  max-width: 100%;
-  padding: 0 4px; }
 
 .sponsor-img {
   max-width: 50%;
@@ -255,10 +250,12 @@ body {
   color: white;
   background-color: #272425; }
 
+a {
+  color: white; }
+
 h1 {
   font-size: 36px;
-  margin-top: 0;
-  font-family: Gotham-Book, Arial; }
+  margin-top: 0; }
 
 p {
   line-height: 1.45; }
