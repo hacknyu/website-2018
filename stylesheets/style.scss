@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
 
-// @font-face { font-family: Gotham ; src: url('fonts/GothamLight/Gotham-Light.ttf'); }
-// @font-face { font-family: Gotham-Book; font-weight: bold; src: url('fonts/GothamBook/Gotham-Book.ttf');}
-// @font-face { font-family: Gotham-Medium; font-weight: bold; src: url('fonts/Gotham Medium/Gotham-Medium.ttf');}
-
-$body-font: 'Montserrat', Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $accent-color: #C31AFF;
 $dark: #272425;
 
