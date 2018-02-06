@@ -44,7 +44,7 @@
   padding-top: 2em;
   min-height: 90vh;
   overflow: auto;
-  background-color: #222222;
+  background-color: #272425;
   color: white; }
 
 #cover-logo {
@@ -289,7 +289,7 @@ p {
   margin: 0;
   margin-right: 0.25em;
   margin-bottom: 0.5em;
-  background-color: #222222; }
+  background-color: #272425; }
   .button:hover {
     transition-duration: 250ms;
     background-color: #4e4e4e; }
@@ -309,10 +309,10 @@ p {
 
 #content {
   min-height: 100vh;
-  background-color: #222222; }
+  background-color: #272425; }
 
 #copyright-footer {
-  background: #222222;
+  background: #272425;
   text-align: center;
   padding: 2em;
   color: white; }
