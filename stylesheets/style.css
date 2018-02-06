@@ -2,15 +2,15 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @font-face {
   font-family: Gotham;
-  src: url("/hacknyu.org/stylesheets/fonts/GothamLight/Gotham-Light.ttf"); }
+  src: url("fonts/GothamLight/Gotham-Light.ttf"); }
 @font-face {
   font-family: Gotham-Book;
   font-weight: bold;
-  src: url("/hacknyu.org/stylesheets/fonts/GothamBook/Gotham-Book.ttf"); }
+  src: url("fonts/GothamBook/Gotham-Book.ttf"); }
 @font-face {
   font-family: Gotham-Medium;
   font-weight: bold;
-  src: url("/hacknyu.org/stylesheets/fonts/Gotham Medium/Gotham-Medium.ttf"); }
+  src: url("fonts/Gotham Medium/Gotham-Medium.ttf"); }
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -44,7 +44,7 @@
   padding-top: 2em;
   min-height: 90vh;
   overflow: auto;
-  background-color: #222222;
+  background-color: #272425;
   color: white; }
 
 #cover-logo {
@@ -289,7 +289,7 @@ p {
   margin: 0;
   margin-right: 0.25em;
   margin-bottom: 0.5em;
-  background-color: #222222; }
+  background-color: #272425; }
   .button:hover {
     transition-duration: 250ms;
     background-color: #4e4e4e; }
@@ -309,10 +309,10 @@ p {
 
 #content {
   min-height: 100vh;
-  background-color: #222222; }
+  background-color: #272425; }
 
 #copyright-footer {
-  background: #222222;
+  background: #272425;
   text-align: center;
   padding: 2em;
   color: white; }
