@@ -26,6 +26,14 @@
   padding: 0 1.5em;
 }
 
+#navbar .top-right-ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 1.5em;
+}
+
 #navbar #side-nav {
   top: 0;
   padding-left: 0;
@@ -48,6 +56,11 @@
   position: absolute;
 }
 
+#navbar .top-right-li {
+  float: right;
+  margin-right: 120px;
+}
+
 @media screen and (max-width: 700px){
   #navbar .top-li {
     display: none;
@@ -61,6 +74,15 @@
   }
   .cards{
     display: block;
+  }
+  #navbar .top-right-li {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #navbar .top-right-li {
+    margin-right: 150px;
   }
 }
 
