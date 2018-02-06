@@ -3,14 +3,17 @@
 @font-face {
   font-family: Gotham;
   src: url("fonts/GothamLight/Gotham-Light.ttf"); }
+
 @font-face {
   font-family: Gotham-Book;
   font-weight: bold;
   src: url("fonts/GothamBook/Gotham-Book.ttf"); }
+
 @font-face {
   font-family: Gotham-Medium;
   font-weight: bold;
   src: url("fonts/Gotham Medium/Gotham-Medium.ttf"); }
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -18,6 +21,7 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
+
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -40,6 +44,7 @@
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
+
 #cover {
   padding-top: 2em;
   min-height: 90vh;
@@ -146,7 +151,8 @@
   padding: 0 4px; }
 
 .sponsor-img {
-  width: 100%;
+  max-width: 50%;
+  max-height: 75px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -154,9 +160,9 @@
 
 .sponsor {
   text-align: center;
-  width: 100%;
+  width: 33.333%;
   float: left;
-  height: 200px;
+  height: 100px;
   position: relative; }
 
 #navbar {
@@ -219,22 +225,20 @@
 @media screen and (max-width: 700px) {
   #navbar .top-li {
     display: none; }
-
   #navbar #menu-toggle {
     display: block; }
-
   .column {
     max-width: 100%;
     flex: 100%; }
-
   .cards {
     display: block; }
-
   #navbar .top-right-li {
     margin-right: 100px; } }
+
 @media screen and (max-width: 1000px) {
   #navbar .top-right-li {
     margin-right: 150px; } }
+
 #navbar .top-li {
   float: left; }
 
