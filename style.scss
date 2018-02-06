@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+@font-face { font-family: Gotham ; src: url('/stylesheets/fonts/GothamLight/Gotham-Light.ttf'); } 
+
+@font-face { font-family: Gotham-Book; font-weight: bold; src: url('/stylesheets/fonts/GothamBook/Gotham-Book.ttf');}
+
+@font-face { font-family: Gotham-Medium; font-weight: bold; src: url('/stylesheets/fonts/Gotham Medium/Gotham-Medium.ttf');}
+
+$body-font: Gotham, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$accent-color: #C31AFF;
+$dark: #222222;
+
+$large: 700px;
+
+@import 'utils';
+@import 'animation';
+@import 'cover';
+@import 'social-media';
+@import 'cards';
+@import 'sponsors';
+@import 'navbar';
+
+body {
+  font-family: $body-font;
+  font-size: 20px;
+  margin: 0;
+  min-height: 100vh;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+  font-family: Gotham-Book, Arial;
+}
+
+p {
+  line-height: 1.45;
+}
+
+.container {
+  @include clearfix();
+  max-width: 42em;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25em;
+  // border: 2px white solid;
+  margin: 0;
+  margin-right: 0.25em;
+  margin-bottom: 0.5em;
+  background-color: $dark;
+
+  &:hover {
+    transition-duration: 250ms;
+    background-color: rgb(78, 78, 78);
+  }
+
+  &:visited, &:active {
+    color: white;
+  }
+}
+
+.first-section {
+  padding-top: 1.6em;
+  margin-top: 58px;
+}
+
+.page-section {
+  @include clearfix();
+  // padding-top: 1.6em;
+  padding-bottom: 2em;
+}
+
+#content {
+  min-height: 100vh;
+  background-color: $dark;
+}
+
+#copyright-footer {
+  // background-color: rgb(230, 230, 230);
+  background: $dark;
+  text-align: center;
+  padding: 2em;
+  color: white;
+}
+
+.alert {
+  background-color: #C31AFF;
+  color: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  a {
+    color: white;
+  }
+}

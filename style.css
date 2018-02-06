@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@font-face {
+  font-family: Gotham;
+  src: url("/stylesheets/fonts/GothamLight/Gotham-Light.ttf"); }
+@font-face {
+  font-family: Gotham-Book;
+  font-weight: bold;
+  src: url("/stylesheets/fonts/GothamBook/Gotham-Book.ttf"); }
+@font-face {
+  font-family: Gotham-Medium;
+  font-weight: bold;
+  src: url("/stylesheets/fonts/Gotham Medium/Gotham-Medium.ttf"); }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-10px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+.fadeInLeft {
+  animation-name: fadeInLeft; }
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+#nodes {
+  fill: rgba(255, 255, 255, 0.5); }
+
+#curves {
+  fill: #222;
+  stroke-dasharray: 1000;
+  stroke: white;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 12;
+  animation: dash 3s normal forwards linear;
+  stroke-dashoffset: 1000; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+#cover {
+  padding-top: 2em;
+  min-height: 90vh;
+  overflow: auto;
+  background-color: #222222;
+  color: white; }
+
+#cover-logo {
+  display: block;
+  width: 45%;
+  min-height: 200px;
+  float: left;
+  padding-right: 10%; }
+  @media (max-width: 700px) {
+    #cover-logo {
+      width: 75%;
+      height: auto;
+      padding: 0;
+      float: none;
+      margin: 0 auto; } }
+
+#cover-info {
+  width: 45%;
+  float: left;
+  font-size: 20px;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+  color: white; }
+  @media (max-width: 700px) {
+    #cover-info {
+      width: 100%; } }
+  #cover-info a {
+    color: white; }
+  #cover-info h1 {
+    margin-bottom: 0.5em; }
+
+#cover-container {
+  max-width: 36em; }
+
+.info-line {
+  margin: 0; }
+
+#registration-button {
+  background-color: #C31AFF;
+  font-weight: bold;
+  margin-top: 1.5em; }
+  #registration-button:hover {
+    background-color: #D55EFF; }
+
+#buttons .button {
+  width: 80%; }
+
+.social-media-icon {
+  float: left;
+  display: block; }
+
+#social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em; }
+  #social-media::after {
+    display: block;
+    content: "";
+    clear: both; }
+  #social-media li {
+    display: inline-block; }
+  #social-media a {
+    float: left; }
+
+.fa-facebook-square {
+  color: #3f51b5; }
+
+.fa-twitter-square {
+  color: #2196F3; }
+
+.fa-instagram {
+  color: #C31AFF; }
+
+.fa-snapchat {
+  color: #FFFC00; }
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 5%;
+  margin-bottom: 5%;
+  float: left;
+  display: block;
+  border-radius: 0.5em;
+  overflow: hidden; }
+
+.cards {
+  margin-right: -5%;
+  display: flex; }
+  .cards::after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.column {
+  flex: 50%;
+  max-width: 100%;
+  padding: 0 4px; }
+
+.sponsor-img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.sponsor {
+  text-align: center;
+  width: 100%;
+  float: left;
+  height: 200px;
+  position: relative; }
+
+#navbar {
+  font-family: Gotham-Medium, Arial;
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  z-index: 999; }
+
+#navbar::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+#navbar .top-ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 1.5em; }
+
+#navbar .top-right-ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 1.5em; }
+
+#navbar #side-nav {
+  top: 0;
+  padding-left: 0;
+  overflow-x: hidden;
+  background-color: white;
+  width: 0;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  margin: 0;
+  list-style: none;
+  padding-top: 5vh;
+  text-align: center;
+  z-index: 5;
+  transition: 0.5s; }
+
+#navbar #menu-toggle {
+  z-index: 1;
+  display: none;
+  position: absolute; }
+
+#navbar .top-right-li {
+  float: right;
+  margin-right: 120px; }
+
+@media screen and (max-width: 700px) {
+  #navbar .top-li {
+    display: none; }
+
+  #navbar #menu-toggle {
+    display: block; }
+
+  .column {
+    max-width: 100%;
+    flex: 100%; }
+
+  .cards {
+    display: block; }
+
+  #navbar .top-right-li {
+    margin-right: 100px; } }
+@media screen and (max-width: 1000px) {
+  #navbar .top-right-li {
+    margin-right: 150px; } }
+#navbar .top-li {
+  float: left; }
+
+#navbar a {
+  padding: 1.5em;
+  display: block;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#navbar li:hover, #menu-toggle:hover {
+  background-color: #e6e6e6;
+  cursor: pointer; }
+
+#navbar a:visited {
+  color: black; }
+
+#navbar li:active {
+  background-color: darkgrey; }
+
+body {
+  font-family: Gotham, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  min-height: 100vh;
+  color: white; }
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+  font-family: Gotham-Book, Arial; }
+
+p {
+  line-height: 1.45; }
+
+.container {
+  max-width: 42em;
+  margin: 0 auto;
+  width: 90%; }
+  .container::after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25em;
+  margin: 0;
+  margin-right: 0.25em;
+  margin-bottom: 0.5em;
+  background-color: #222222; }
+  .button:hover {
+    transition-duration: 250ms;
+    background-color: #4e4e4e; }
+  .button:visited, .button:active {
+    color: white; }
+
+.first-section {
+  padding-top: 1.6em;
+  margin-top: 58px; }
+
+.page-section {
+  padding-bottom: 2em; }
+  .page-section::after {
+    display: block;
+    content: "";
+    clear: both; }
+
+#content {
+  min-height: 100vh;
+  background-color: #222222; }
+
+#copyright-footer {
+  background: #222222;
+  text-align: center;
+  padding: 2em;
+  color: white; }
+
+.alert {
+  background-color: #C31AFF;
+  color: white;
+  border-radius: 0.25em;
+  padding: 1em; }
+  .alert a {
+    color: white; }
