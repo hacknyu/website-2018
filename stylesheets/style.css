@@ -2,15 +2,15 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @font-face {
   font-family: Gotham;
-  src: url("/stylesheets/fonts/GothamLight/Gotham-Light.ttf"); }
+  src: url("/hacknyu.org/stylesheets/fonts/GothamLight/Gotham-Light.ttf"); }
 @font-face {
   font-family: Gotham-Book;
   font-weight: bold;
-  src: url("/stylesheets/fonts/GothamBook/Gotham-Book.ttf"); }
+  src: url("/hacknyu.org/stylesheets/fonts/GothamBook/Gotham-Book.ttf"); }
 @font-face {
   font-family: Gotham-Medium;
   font-weight: bold;
-  src: url("/stylesheets/fonts/Gotham Medium/Gotham-Medium.ttf"); }
+  src: url("/hacknyu.org/stylesheets/fonts/Gotham Medium/Gotham-Medium.ttf"); }
 @keyframes fadeInLeft {
   from {
     opacity: 0;
