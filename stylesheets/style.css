@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -7,7 +8,6 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
-
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -30,7 +30,6 @@
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
-
 #cover {
   padding-top: 2em;
   min-height: 90vh;
@@ -207,20 +206,22 @@
 @media screen and (max-width: 700px) {
   #navbar .top-li {
     display: none; }
+
   #navbar #menu-toggle {
     display: block; }
+
   .column {
     max-width: 100%;
     flex: 100%; }
+
   .cards {
     display: block; }
+
   #navbar .top-right-li {
     margin-right: 100px; } }
-
 @media screen and (max-width: 1000px) {
   #navbar .top-right-li {
     margin-right: 150px; } }
-
 #navbar .top-li {
   float: left; }
 
@@ -243,7 +244,7 @@
   background-color: darkgrey; }
 
 body {
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   margin: 0;
   min-height: 100vh;
