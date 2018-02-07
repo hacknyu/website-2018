@@ -19,4 +19,10 @@ $margin-size: 5%;
 .cards {
   @include clearfix();
   margin-right: -$margin-size;
+
+  @media (max-width: $large) {
+    // padding: 0;
+    // width: 100%;
+    margin: 0;
+  }
 }

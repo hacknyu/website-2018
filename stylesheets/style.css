@@ -132,6 +132,9 @@
     display: block;
     content: "";
     clear: both; }
+  @media (max-width: 700px) {
+    .cards {
+      margin: 0; } }
 
 .sponsor-img {
   max-width: 50%;
