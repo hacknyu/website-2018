@@ -288,3 +288,9 @@ p {
   padding: 1em; }
   .alert a {
     color: white; }
+
+.track-logo {
+  width: 10%; }
+  @media (max-width: 700px) {
+    .track-logo {
+      width: 50%; } }

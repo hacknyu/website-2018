@@ -99,3 +99,13 @@ p {
     color: white;
   }
 }
+
+
+.track-logo {
+  width: 10%;
+  @media (max-width: $large) {
+    width: 50%;
+  }
+  // float: left;
+  // padding: 0.5em;
+}
