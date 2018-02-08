@@ -7,7 +7,6 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
-
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -30,7 +29,6 @@
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
-
 #cover {
   padding-top: 2em;
   min-height: 90vh;
@@ -42,9 +40,7 @@
   display: block;
   width: 48%;
   min-height: 200px;
-  float: left;
-  padding-right: 7%;
-  padding-top: 2em; }
+  float: left; }
   @media (max-width: 700px) {
     #cover-logo {
       width: 75%;
@@ -198,9 +194,9 @@
 @media screen and (max-width: 700px) {
   #navbar .top-li {
     display: none; }
+
   #navbar #menu-toggle {
     display: block; } }
-
 #navbar .top-li {
   float: left; }
 
