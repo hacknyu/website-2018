@@ -7,6 +7,7 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
+
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -29,6 +30,7 @@
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
+
 #cover {
   padding-top: 2em;
   min-height: 90vh;
@@ -38,9 +40,11 @@
 
 #cover-logo {
   display: block;
-  width: 48%;
+  width: 40%;
   min-height: 200px;
-  float: left; }
+  float: left;
+  padding-right: 10%;
+  padding-top: 2em; }
   @media (max-width: 700px) {
     #cover-logo {
       width: 75%;
@@ -48,13 +52,12 @@
       padding: 0;
       float: none;
       margin: 0 auto;
-      padding-bottom: 1em; } }
+      padding-bottom: 4em; } }
 
 #cover-info {
   width: 45%;
   float: left;
   font-size: 20px;
-  padding-top: 1.5em;
   padding-bottom: 3em;
   color: white; }
   @media (max-width: 700px) {
@@ -157,6 +160,9 @@
   font-weight: 500;
   letter-spacing: 0.03em;
   z-index: 999; }
+  #navbar #menu-toggle {
+    background-color: #272425;
+    color: white; }
 
 #navbar::after {
   display: block;
@@ -194,9 +200,9 @@
 @media screen and (max-width: 700px) {
   #navbar .top-li {
     display: none; }
-
   #navbar #menu-toggle {
     display: block; } }
+
 #navbar .top-li {
   float: left; }
 
