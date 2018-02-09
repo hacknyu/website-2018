@@ -161,6 +161,7 @@
   letter-spacing: 0.03em;
   z-index: 999; }
   #navbar #menu-toggle {
+    background-color: #272425;
     color: white; }
 
 #navbar::after {
