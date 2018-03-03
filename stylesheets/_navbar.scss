@@ -8,6 +8,11 @@
   font-weight: 500;
   letter-spacing: 0.03em;
   z-index: 999;
+
+  #menu-toggle {
+    background-color: $dark;
+    color: white;
+  }
 }
 
 #navbar::after {
@@ -63,7 +68,7 @@
   padding: 1.5em;
   display: block;
   // height: 100%;
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
