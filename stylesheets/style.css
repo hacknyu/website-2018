@@ -135,13 +135,22 @@
     .cards {
       margin: 0; } }
 
-.sponsor-img {
+.sponsor-big {
+  max-width: 70%;
+  max-height: 90px; }
+
+.sponsor-default {
   max-width: 50%;
-  max-height: 75px;
+  max-height: 75px; }
+
+.sponsor-img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  transition-duration: 200ms; }
+  .sponsor-img:hover {
+    transform: scale(1.1) translate(-50%, -50%); }
 
 .sponsor {
   text-align: center;
@@ -149,6 +158,29 @@
   float: left;
   height: 100px;
   position: relative; }
+
+.full-width {
+  width: 100% !important; }
+
+.quarter-width {
+  width: 25% !important; }
+
+.half-width {
+  width: 50% !important; }
+
+.centered {
+  float: none;
+  margin: 0 auto; }
+
+.float-none {
+  float: none; }
+
+.row {
+  margin-bottom: 3em; }
+  .row::after {
+    display: block;
+    content: "";
+    clear: both; }
 
 #navbar {
   display: block;
