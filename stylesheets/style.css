@@ -135,6 +135,10 @@
     .cards {
       margin: 0; } }
 
+.sponsor-max {
+  max-width: 80%;
+  max-height: 120px; }
+
 .sponsor-big {
   max-width: 70%;
   max-height: 90px; }
