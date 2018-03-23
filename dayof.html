@@ -12,27 +12,41 @@
   <meta name="description" content="">
   <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="icon" href="favicon.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43028228-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-43028228-4');
+  </script>
+
 </head>
 
 <body>
   <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white"
     target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-  <nav id="navbar">
-    <a id="menu-toggle" style="height: 30.5px; font-size: 24.5px; padding: .5em; margin-left: 20px;" onclick="openNav()">&#9776;</a>
-    <ul class="top-ul">
-      <li class="top-li"><a href="index.html">HackNYU</a></li>
-      <li class="top-li"><a href="about.html">Learn More</a></li>
-      <li class="top-li"><a href="tracks.html">Tracks</a></li>
-      <li class="top-li"><a href="sponsor.html">Sponsor</a></li>
-    </ul>
-    <ul id="side-nav">
-      <a href="javascript:void(0)" onclick="closeNav()" style="height: 5px; text-align: right; font-size: 21px; margin:.5em; padding: 1em;; margin-left: 80%; width: 10px;">&times;</a>
-      <li class="side-li"><a href="index.html">HackNYU</a></li>
-      <li class="side-li"><a href="about.html">Learn More</a></li>
-      <li class="top-li"><a href="tracks.html">Tracks</a></li>
-      <li class="side-li"><a href="sponsor.html">Sponsor</a></li>
-    </ul>
-  </nav>
+    <nav id="navbar">
+      <a id="menu-toggle" style="height: 30.5px; font-size: 24.5px; padding: .5em; margin-left: 20px;" onclick="openNav()">&#9776;</a>
+      <ul class="top-ul">
+        <li class="top-li"><a href="index.html">HackNYU</a></li>
+        <li class="top-li"><a href="dayof.html">Day of</a></li>
+        <li class="top-li"><a href="schedule.html">Schedule</a></li>
+        <li class="top-li"><a href="about.html">Learn More</a></li>
+        <li class="top-li"><a href="tracks.html">Tracks</a></li>
+        <li class="top-li"><a href="sponsor.html">Sponsor</a></li>
+      </ul>
+      <ul id="side-nav">
+        <a href="javascript:void(0)" onclick="closeNav()" style="height: 5px; text-align: right; font-size: 21px; margin:.5em; padding: 1em;; margin-left: 80%; width: 10px;">&times;</a>
+        <li class="side-li"><a href="index.html">HackNYU</a></li>
+        <li class="side-li"><a href="dayof.html">Day of</a></li>
+        <li class="side-li"><a href="schedule.html">Schedule</a></li>
+        <li class="side-li"><a href="about.html">Learn More</a></li>
+        <li class="side-li"><a href="tracks.html">Tracks</a></li>
+        <li class="side-li"><a href="sponsor.html">Sponsor</a></li>
+      </ul>
+    </nav>
   <div id="content">
     <section class="first-section page-section">
       <!-- TODO: Update with Volunteer colors + Opening slides link + Mentor hotline (if exists) -->
@@ -70,22 +84,25 @@
         <p>We have a designated "nap room": Room LC400 in 5 MetroTech Center, Floor 4. Please ask a volunteer if you need guidance.</p>
 
         <h2>Judging and Submitting</h2>
-        <p>You can pick one of 4 different tracks that you can submit your project to, as well as a number of sponsor prizes (to be announced).</p>
+        <p>You can pick one of 4 different tracks that you can submit your project to, as well as a number of sponsor prizes (to be announced). Teams may have up to 5 participants. View the full hackathon rules: <a href="https://hacknyu2018.devpost.com/rules">here</a>.</p>
 
-        <p>Learn more about the different tracks <a href="tracks.html">here</a>.</p>
+        <p>Learn more about the different tracks <a href="tracks.html">here</a>. </p>
 
         <p>Submissions are due at 12:00 PM on Sunday on Devpost, which can be found <a href="https://hacknyu2018.devpost.com/">here</a>. Try to submit a bit earlier, as you can keep working up after submission until the end of the hacking period.</p>
 
         <h2>APIs</h2>
         <p>
-          NYU has a brand new RESTful API (could come in handy for *edTech* apps, hint hint!). It can be found: <a href="https://wp.nyu.edu/developers">here</a>.
+          NYU has a brand new RESTful API (could come in handy for *edTech* apps, hint hint!). Documentation can be found: <a href="https://wp.nyu.edu/developers">here</a>. And the API portal can be found: <a href="https://anypoint.mulesoft.com/exchange/portals/nyu-0/">here</a>.
+        </p>
+        <p style="font-size: 0.75em;">NYU IT Enterprise Data Management will be at HackNYU to help with the API. If you have API questions before or after the event, please send email to <em>it-apiservices@nyu.edu</em>. You are also invited to join the <a href="https://nyuapi.slack.com/join/shared_invite/enQtMjc0OTE3NTEzODEzLWE0ZjdmMDdmYjdlZjM0YTljZmJhZTVhNzQ1YjM5Yjk4YzI4YTg5MjM3MmJiODBiMDIyYjgzMWUwZGVmZDY3NTQ">NYUAPI Slack community</a> for ongoing discussion about APIs at NYU, and news about new datasets and developer support options as they become available on a rolling basis.
         </p>
 
         <h2>Quick Links</h2>
         <ul>
           <li><a href="https://hacknyu2018.devpost.com/">Devpost</a></li>
           <li><a href="http://bit.ly/hacknyu2018slack">Slack</a></li>
-          <li><a href="https://wp.nyu.edu/developers">NYU API</a></li>
+          <li><a href="https://hacknyu2018.devpost.com/rules">Rules</a></li>
+          <li><a href="https://wp.nyu.edu/developers">NYU API Docs</a></li>
         <ul>
       </div>
     </section>
