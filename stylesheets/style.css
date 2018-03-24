@@ -259,6 +259,9 @@
 #navbar li:active {
   background-color: darkgrey; }
 
+.curpage {
+  background-color: darkgrey; }
+
 body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
